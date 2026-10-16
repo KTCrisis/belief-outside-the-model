@@ -1,0 +1,150 @@
+{"rumor": 0, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 0, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000425, "right": true, "loss": 2.0}
+{"rumor": 0, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000425, "right": true, "loss": 2.0}
+{"rumor": 0, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 11.0, "path": ["forum_thread", "article_a", "article_b", "official_statement"], "dollars": 0.006868000000000001, "right": true, "loss": 11.0}
+{"rumor": 0, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.003848, "right": true, "loss": 6.0}
+{"rumor": 1, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 1, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000423, "right": true, "loss": 2.0}
+{"rumor": 1, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000423, "right": true, "loss": 2.0}
+{"rumor": 1, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.002669, "right": true, "loss": 6.0}
+{"rumor": 1, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0047539999999999995, "right": true, "loss": 6.0}
+{"rumor": 2, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 2, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0008669999999999999, "right": true, "loss": 4.0}
+{"rumor": 2, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0017230000000000001, "right": true, "loss": 12.0}
+{"rumor": 2, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 5.0, "path": ["informed_colleague", "article_a"], "dollars": 0.004793, "right": true, "loss": 5.0}
+{"rumor": 2, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 4.0, "path": ["article_c", "article_b"], "dollars": 0.00827, "right": true, "loss": 4.0}
+{"rumor": 3, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 3, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.00127, "right": true, "loss": 6.0}
+{"rumor": 3, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.001684, "right": true, "loss": 12.0}
+{"rumor": 3, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.002398, "right": true, "loss": 6.0}
+{"rumor": 3, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.005376000000000001, "right": true, "loss": 6.0}
+{"rumor": 4, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 4, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000431, "right": true, "loss": 2.0}
+{"rumor": 4, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000431, "right": true, "loss": 2.0}
+{"rumor": 4, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 9.0, "path": ["informed_colleague", "official_statement"], "dollars": 0.005119, "right": true, "loss": 9.0}
+{"rumor": 4, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.004987, "right": true, "loss": 6.0}
+{"rumor": 5, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 5, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000415, "right": true, "loss": 2.0}
+{"rumor": 5, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000415, "right": true, "loss": 2.0}
+{"rumor": 5, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 14.0, "path": ["forum_thread", "informed_colleague", "article_a", "article_b", "official_statement"], "dollars": 0.008244, "right": true, "loss": 14.0}
+{"rumor": 5, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 4.0, "path": ["article_c", "article_b"], "dollars": 0.0059640000000000006, "right": true, "loss": 4.0}
+{"rumor": 6, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 6, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000424, "right": true, "loss": 2.0}
+{"rumor": 6, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000424, "right": true, "loss": 2.0}
+{"rumor": 6, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 5.0, "path": ["forum_thread", "article_a", "article_b"], "dollars": 0.005809999999999999, "right": true, "loss": 5.0}
+{"rumor": 6, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 8.0, "path": ["official_statement", "article_c"], "dollars": 0.005949, "right": true, "loss": 8.0}
+{"rumor": 7, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 7, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00041299999999999996, "right": true, "loss": 2.0}
+{"rumor": 7, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000423, "right": true, "loss": 2.0}
+{"rumor": 7, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 13.0, "path": ["official_statement", "informed_colleague", "article_a", "article_b"], "dollars": 0.008583, "right": true, "loss": 13.0}
+{"rumor": 7, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 4.0, "path": ["article_c", "article_b"], "dollars": 0.0063750000000000005, "right": true, "loss": 4.0}
+{"rumor": 8, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 8, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00043799999999999997, "right": true, "loss": 2.0}
+{"rumor": 8, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000428, "right": true, "loss": 2.0}
+{"rumor": 8, "truth": false, "retracts": false, "agent": "llm", "answer": true, "minutes": 9.0, "path": ["official_statement", "informed_colleague"], "dollars": 0.004263, "right": false, "loss": 49.0}
+{"rumor": 8, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.005866, "right": true, "loss": 6.0}
+{"rumor": 9, "truth": false, "retracts": true, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": false, "loss": 46.0}
+{"rumor": 9, "truth": false, "retracts": true, "agent": "hybrid_naive", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.001278, "right": false, "loss": 46.0}
+{"rumor": 9, "truth": false, "retracts": true, "agent": "hybrid_prov", "answer": true, "minutes": 10.0, "path": ["article_b", "(retraction)", "article_c", "official_statement"], "dollars": 0.001266, "right": false, "loss": 50.0}
+{"rumor": 9, "truth": false, "retracts": true, "agent": "llm", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.002419, "right": false, "loss": 46.0}
+{"rumor": 9, "truth": false, "retracts": true, "agent": "llm_mem", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.004479, "right": false, "loss": 46.0}
+{"rumor": 10, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 10, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.001275, "right": true, "loss": 6.0}
+{"rumor": 10, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.001701, "right": true, "loss": 12.0}
+{"rumor": 10, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0023220000000000003, "right": true, "loss": 6.0}
+{"rumor": 10, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.005418, "right": true, "loss": 6.0}
+{"rumor": 11, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 11, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.000826, "right": true, "loss": 4.0}
+{"rumor": 11, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.001624, "right": true, "loss": 12.0}
+{"rumor": 11, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 5.0, "path": ["informed_colleague", "article_a"], "dollars": 0.004587000000000001, "right": true, "loss": 5.0}
+{"rumor": 11, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.005255, "right": true, "loss": 6.0}
+{"rumor": 12, "truth": true, "retracts": true, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 12, "truth": true, "retracts": true, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000425, "right": false, "loss": 42.0}
+{"rumor": 12, "truth": true, "retracts": true, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000425, "right": false, "loss": 42.0}
+{"rumor": 12, "truth": true, "retracts": true, "agent": "llm", "answer": true, "minutes": 11.0, "path": ["forum_thread", "article_a", "article_b", "official_statement"], "dollars": 0.007667, "right": true, "loss": 11.0}
+{"rumor": 12, "truth": true, "retracts": true, "agent": "llm_mem", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.005843, "right": true, "loss": 6.0}
+{"rumor": 13, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 13, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00042199999999999996, "right": true, "loss": 2.0}
+{"rumor": 13, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00042199999999999996, "right": true, "loss": 2.0}
+{"rumor": 13, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.003083, "right": true, "loss": 6.0}
+{"rumor": 13, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.003874, "right": true, "loss": 6.0}
+{"rumor": 14, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 14, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00042899999999999997, "right": true, "loss": 2.0}
+{"rumor": 14, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00042899999999999997, "right": true, "loss": 2.0}
+{"rumor": 14, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 7.0, "path": ["forum_thread", "article_a", "article_b", "article_c"], "dollars": 0.008071, "right": true, "loss": 7.0}
+{"rumor": 14, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["article_c", "article_b", "article_a"], "dollars": 0.009884, "right": true, "loss": 6.0}
+{"rumor": 15, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 15, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000416, "right": true, "loss": 2.0}
+{"rumor": 15, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000416, "right": true, "loss": 2.0}
+{"rumor": 15, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 7.0, "path": ["influencer_post", "official_statement"], "dollars": 0.003854, "right": true, "loss": 7.0}
+{"rumor": 15, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.003959000000000001, "right": true, "loss": 6.0}
+{"rumor": 16, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 16, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00042199999999999996, "right": true, "loss": 2.0}
+{"rumor": 16, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00042199999999999996, "right": true, "loss": 2.0}
+{"rumor": 16, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 9.0, "path": ["official_statement", "informed_colleague"], "dollars": 0.004647999999999999, "right": true, "loss": 9.0}
+{"rumor": 16, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.005218, "right": true, "loss": 6.0}
+{"rumor": 17, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 17, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.001254, "right": true, "loss": 6.0}
+{"rumor": 17, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.001662, "right": true, "loss": 12.0}
+{"rumor": 17, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 9.0, "path": ["informed_colleague", "official_statement"], "dollars": 0.004737, "right": true, "loss": 9.0}
+{"rumor": 17, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 4.0, "path": ["article_c", "article_b"], "dollars": 0.009073999999999999, "right": true, "loss": 4.0}
+{"rumor": 18, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 18, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.000863, "right": true, "loss": 4.0}
+{"rumor": 18, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.001699, "right": true, "loss": 12.0}
+{"rumor": 18, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 9.0, "path": ["informed_colleague", "official_statement"], "dollars": 0.0048400000000000006, "right": true, "loss": 9.0}
+{"rumor": 18, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0038859999999999997, "right": true, "loss": 6.0}
+{"rumor": 19, "truth": false, "retracts": true, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 19, "truth": false, "retracts": true, "agent": "hybrid_naive", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0008500000000000001, "right": false, "loss": 44.0}
+{"rumor": 19, "truth": false, "retracts": true, "agent": "hybrid_prov", "answer": false, "minutes": 10.0, "path": ["article_b", "(retraction)", "article_c", "official_statement"], "dollars": 0.001276, "right": true, "loss": 10.0}
+{"rumor": 19, "truth": false, "retracts": true, "agent": "llm", "answer": false, "minutes": 12.0, "path": ["official_statement", "article_a", "article_b", "article_c"], "dollars": 0.007422, "right": true, "loss": 12.0}
+{"rumor": 19, "truth": false, "retracts": true, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.006119, "right": true, "loss": 6.0}
+{"rumor": 20, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 20, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.001287, "right": false, "loss": 46.0}
+{"rumor": 20, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0017, "right": true, "loss": 12.0}
+{"rumor": 20, "truth": false, "retracts": false, "agent": "llm", "answer": true, "minutes": 3.0, "path": ["forum_thread", "article_a"], "dollars": 0.004318, "right": false, "loss": 43.0}
+{"rumor": 20, "truth": false, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 6.0, "path": ["article_c", "article_b", "article_a"], "dollars": 0.008073, "right": false, "loss": 46.0}
+{"rumor": 21, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 21, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00042599999999999995, "right": true, "loss": 2.0}
+{"rumor": 21, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000421, "right": true, "loss": 2.0}
+{"rumor": 21, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 9.0, "path": ["official_statement", "informed_colleague"], "dollars": 0.004200000000000001, "right": true, "loss": 9.0}
+{"rumor": 21, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.004579, "right": true, "loss": 6.0}
+{"rumor": 22, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 22, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.000851, "right": true, "loss": 4.0}
+{"rumor": 22, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.001705, "right": true, "loss": 12.0}
+{"rumor": 22, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 9.0, "path": ["informed_colleague", "official_statement"], "dollars": 0.003978, "right": true, "loss": 9.0}
+{"rumor": 22, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 8.0, "path": ["article_c", "official_statement"], "dollars": 0.008737000000000002, "right": true, "loss": 8.0}
+{"rumor": 23, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 23, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000414, "right": true, "loss": 2.0}
+{"rumor": 23, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000414, "right": true, "loss": 2.0}
+{"rumor": 23, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 8.0, "path": ["forum_thread", "article_a", "article_b", "informed_colleague"], "dollars": 0.007322, "right": true, "loss": 8.0}
+{"rumor": 23, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 12.0, "path": ["article_c", "article_b", "article_a", "official_statement"], "dollars": 0.010716, "right": true, "loss": 12.0}
+{"rumor": 24, "truth": false, "retracts": true, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 24, "truth": false, "retracts": true, "agent": "hybrid_naive", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.001668, "right": true, "loss": 12.0}
+{"rumor": 24, "truth": false, "retracts": true, "agent": "hybrid_prov", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.000854, "right": true, "loss": 4.0}
+{"rumor": 24, "truth": false, "retracts": true, "agent": "llm", "answer": false, "minutes": 11.0, "path": ["forum_thread", "article_a", "article_b", "official_statement"], "dollars": 0.008237, "right": true, "loss": 11.0}
+{"rumor": 24, "truth": false, "retracts": true, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0057269999999999995, "right": true, "loss": 6.0}
+{"rumor": 25, "truth": false, "retracts": true, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 25, "truth": false, "retracts": true, "agent": "hybrid_naive", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.000844, "right": false, "loss": 44.0}
+{"rumor": 25, "truth": false, "retracts": true, "agent": "hybrid_prov", "answer": false, "minutes": 10.0, "path": ["article_b", "(retraction)", "article_c", "official_statement"], "dollars": 0.001251, "right": true, "loss": 10.0}
+{"rumor": 25, "truth": false, "retracts": true, "agent": "llm", "answer": false, "minutes": 9.0, "path": ["official_statement", "informed_colleague"], "dollars": 0.003992, "right": true, "loss": 9.0}
+{"rumor": 25, "truth": false, "retracts": true, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.003933, "right": true, "loss": 6.0}
+{"rumor": 26, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 26, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00041999999999999996, "right": true, "loss": 2.0}
+{"rumor": 26, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.00043, "right": true, "loss": 2.0}
+{"rumor": 26, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 8.0, "path": ["official_statement", "article_a"], "dollars": 0.0046960000000000005, "right": true, "loss": 8.0}
+{"rumor": 26, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["article_c", "article_b", "article_a"], "dollars": 0.006377, "right": true, "loss": 6.0}
+{"rumor": 27, "truth": false, "retracts": false, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 27, "truth": false, "retracts": false, "agent": "hybrid_naive", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000421, "right": true, "loss": 2.0}
+{"rumor": 27, "truth": false, "retracts": false, "agent": "hybrid_prov", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.000421, "right": true, "loss": 2.0}
+{"rumor": 27, "truth": false, "retracts": false, "agent": "llm", "answer": false, "minutes": 10.0, "path": ["forum_thread", "informed_colleague", "official_statement"], "dollars": 0.005185, "right": true, "loss": 10.0}
+{"rumor": 27, "truth": false, "retracts": false, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.005388, "right": true, "loss": 6.0}
+{"rumor": 28, "truth": true, "retracts": false, "agent": "oracle", "answer": true, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 28, "truth": true, "retracts": false, "agent": "hybrid_naive", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.001274, "right": true, "loss": 6.0}
+{"rumor": 28, "truth": true, "retracts": false, "agent": "hybrid_prov", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0017000000000000001, "right": true, "loss": 12.0}
+{"rumor": 28, "truth": true, "retracts": false, "agent": "llm", "answer": true, "minutes": 9.0, "path": ["forum_thread", "article_a", "official_statement"], "dollars": 0.005437, "right": true, "loss": 9.0}
+{"rumor": 28, "truth": true, "retracts": false, "agent": "llm_mem", "answer": true, "minutes": 10.0, "path": ["article_c", "article_b", "official_statement"], "dollars": 0.007343000000000001, "right": true, "loss": 10.0}
+{"rumor": 29, "truth": false, "retracts": true, "agent": "oracle", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 29, "truth": false, "retracts": true, "agent": "hybrid_naive", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.001238, "right": false, "loss": 46.0}
+{"rumor": 29, "truth": false, "retracts": true, "agent": "hybrid_prov", "answer": false, "minutes": 10.0, "path": ["article_b", "(retraction)", "article_c", "official_statement"], "dollars": 0.001247, "right": true, "loss": 10.0}
+{"rumor": 29, "truth": false, "retracts": true, "agent": "llm", "answer": false, "minutes": 9.0, "path": ["forum_thread", "influencer_post", "article_a", "article_b", "informed_colleague"], "dollars": 0.00824, "right": true, "loss": 9.0}
+{"rumor": 29, "truth": false, "retracts": true, "agent": "llm_mem", "answer": false, "minutes": 6.0, "path": ["official_statement"], "dollars": 0.0065580000000000005, "right": true, "loss": 6.0}

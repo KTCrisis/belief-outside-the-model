@@ -1,0 +1,10 @@
+[kafka] table estimated by claude-haiku-4-5 (median of 5), cost $0.0000, MAE vs truth 0.058
+[kafka] table learned from mem7 {'incidents': 120, 'weight': 67.0, 'min_runs_per_cell': 2.9}, MAE vs truth 0.111 (no forgetting: 0.088)
+== kafka: 200 incidents, miss 60 min, model claude-haiku-4-5
+agent                  loss  minutes  checks  accuracy  $/episode
+hybrid_mix     24.70 ± 1.99     7.59    3.10     0.715     0.0009
+[internet] table estimated by claude-haiku-4-5 (median of 5), cost $0.0000, MAE vs truth 0.061
+[internet] table learned from mem7 {'incidents': 120, 'weight': 64.4, 'min_runs_per_cell': 1.6}, MAE vs truth 0.133 (no forgetting: 0.087)
+== internet: 200 incidents, miss 45 min, model claude-haiku-4-5
+agent                  loss  minutes  checks  accuracy  $/episode
+hybrid_mix     17.68 ± 1.34     8.46    3.60     0.795     0.0010

@@ -1,0 +1,102 @@
+######## kafka
+scenario kafka: miss 60.0 min, lam 12.0 min/bit, threshold 0.9  (exact expectations, no sampling)
+
+rule                    loss  minutes  accuracy  gap to optimum
+OPTIMUM (DP)           21.49                                      first move: rebalance_logs
+cheapest               34.02    22.78     0.813          +12.53
+max_info               29.67    18.42     0.812           +8.18
+info_per_cost          29.77    18.46     0.811           +8.29
+least_action           22.02     8.11     0.768           +0.53
+ratio_priced           22.02     8.11     0.768           +0.53
+least_action_path      21.88     8.02     0.769           +0.39
+bayes_decision         21.73     7.89     0.769           +0.24
+
+lam sweep, least_action (exact; lam = M/8 .. M/2):
+  lam    7.5 (M/8.0): loss   24.32  gap +2.83
+  lam   10.0 (M/6.0): loss   23.63  gap +2.14
+  lam   12.0 (M/5.0): loss   22.02  gap +0.53
+  lam   13.3 (M/4.5): loss   22.02  gap +0.53
+  lam   15.0 (M/4.0): loss   22.12  gap +0.64
+  lam   17.1 (M/3.5): loss   22.12  gap +0.64
+  lam   20.0 (M/3.0): loss   23.60  gap +2.11
+  lam   30.0 (M/2.0): loss   26.36  gap +4.87
+
+lam sweep, ratio_priced (exact; lam = M/8 .. M/2):
+  lam    7.5 (M/8.0): loss   24.32  gap +2.83
+  lam   10.0 (M/6.0): loss   24.03  gap +2.54
+  lam   12.0 (M/5.0): loss   22.02  gap +0.53
+  lam   13.3 (M/4.5): loss   22.02  gap +0.53
+  lam   15.0 (M/4.0): loss   22.02  gap +0.53
+  lam   17.1 (M/3.5): loss   22.02  gap +0.53
+  lam   20.0 (M/3.0): loss   23.29  gap +1.80
+  lam   30.0 (M/2.0): loss   26.18  gap +4.69
+-- HESP-like: info/cost + posterior threshold 0.8
+info_per_cost          25.67    13.40     0.796           +4.18
+######## internet
+scenario internet: miss 45.0 min, lam 12.0 min/bit, threshold 0.9  (exact expectations, no sampling)
+
+rule                    loss  minutes  accuracy  gap to optimum
+OPTIMUM (DP)           15.26                                      first move: look_at_box_lights
+cheapest               28.96    23.57     0.880          +13.69
+max_info               24.48    19.18     0.882           +9.22
+info_per_cost          24.26    19.02     0.884           +8.99
+least_action           15.30     7.88     0.835           +0.03
+ratio_priced           15.30     7.88     0.835           +0.03
+least_action_path      15.47     8.46     0.844           +0.20
+bayes_decision         17.66     9.20     0.812           +2.40
+
+lam sweep, least_action (exact; lam = M/8 .. M/2):
+  lam    5.6 (M/8.0): loss   21.92  gap +6.66
+  lam    7.5 (M/6.0): loss   18.07  gap +2.80
+  lam    9.0 (M/5.0): loss   15.59  gap +0.32
+  lam   10.0 (M/4.5): loss   15.80  gap +0.53
+  lam   11.2 (M/4.0): loss   15.48  gap +0.21
+  lam   12.9 (M/3.5): loss   15.30  gap +0.03
+  lam   15.0 (M/3.0): loss   15.47  gap +0.20
+  lam   22.5 (M/2.0): loss   18.37  gap +3.10
+
+lam sweep, ratio_priced (exact; lam = M/8 .. M/2):
+  lam    5.6 (M/8.0): loss   21.92  gap +6.66
+  lam    7.5 (M/6.0): loss   18.07  gap +2.80
+  lam    9.0 (M/5.0): loss   15.59  gap +0.32
+  lam   10.0 (M/4.5): loss   15.80  gap +0.53
+  lam   11.2 (M/4.0): loss   15.48  gap +0.21
+  lam   12.9 (M/3.5): loss   15.30  gap +0.03
+  lam   15.0 (M/3.0): loss   15.37  gap +0.11
+  lam   22.5 (M/2.0): loss   17.63  gap +2.37
+-- HESP-like: info/cost + posterior threshold 0.8
+info_per_cost          15.90     9.00     0.847           +0.64
+######## clinic
+scenario clinic: miss 200.0 min, lam 50.0 min/bit, threshold 0.9  (exact expectations, no sampling)
+
+rule                    loss  minutes  accuracy  gap to optimum
+OPTIMUM (DP)           75.91                                      first move: auscultation
+cheapest              139.62   111.58     0.860          +63.71
+max_info              147.67   118.78     0.856          +71.76
+info_per_cost         138.07   109.77     0.859          +62.16
+least_action           76.51    33.92     0.787           +0.60
+ratio_priced           76.51    33.92     0.787           +0.60
+least_action_path      75.91    33.75     0.789           +0.00
+bayes_decision         75.91    33.75     0.789           +0.00
+
+lam sweep, least_action (exact; lam = M/8 .. M/2):
+  lam   25.0 (M/8.0): loss   99.61  gap +23.70
+  lam   33.3 (M/6.0): loss   99.61  gap +23.70
+  lam   40.0 (M/5.0): loss   90.23  gap +14.32
+  lam   44.4 (M/4.5): loss   76.51  gap +0.60
+  lam   50.0 (M/4.0): loss   76.51  gap +0.60
+  lam   57.1 (M/3.5): loss   76.51  gap +0.60
+  lam   66.7 (M/3.0): loss   78.90  gap +2.99
+  lam  100.0 (M/2.0): loss   79.68  gap +3.77
+
+lam sweep, ratio_priced (exact; lam = M/8 .. M/2):
+  lam   25.0 (M/8.0): loss   99.61  gap +23.70
+  lam   33.3 (M/6.0): loss   99.61  gap +23.70
+  lam   40.0 (M/5.0): loss   90.23  gap +14.32
+  lam   44.4 (M/4.5): loss   76.51  gap +0.60
+  lam   50.0 (M/4.0): loss   76.51  gap +0.60
+  lam   57.1 (M/3.5): loss   76.51  gap +0.60
+  lam   66.7 (M/3.0): loss   77.22  gap +1.31
+  lam  100.0 (M/2.0): loss   78.57  gap +2.66
+-- HESP-like: info/cost + posterior threshold 0.8
+info_per_cost          93.32    60.96     0.838          +17.42

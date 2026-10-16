@@ -1,0 +1,15 @@
+
+== kafka: exact expected loss (truth 22.02)
+Jev table: MAE 0.192, loss 40.4
+Haiku median of 5: MAE 0.063, loss mean 23.27
+Jev + mem7: k=10 26.34 (max 30.83), empirical k 24.57 (max 26.71)
+Haiku + mem7: k=10 22.95 (max 25.46), empirical k 22.90 (max 25.26)
+largest Jev error: jvm_gc_logs | upstream_burst: Jev 0.63, truth 0.05
+
+== internet: exact expected loss (truth 15.3)
+Jev table: MAE 0.116, loss 22.11
+Haiku median of 5: MAE 0.085, loss mean 19.91
+Jev + mem7: k=10 18.00 (max 20.36), empirical k 17.03 (max 18.97)
+Haiku + mem7: k=10 16.94 (max 22.10), empirical k 16.83 (max 19.50)
+largest Jev error: stand_next_to_box | loose_cable: Jev 0.69, truth 0.02
+{'calls': 90, 'tokens': 33878, 'errors': 0, 'cached': 0}

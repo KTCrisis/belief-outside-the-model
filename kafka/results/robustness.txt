@@ -1,0 +1,37 @@
+== 1. The reader's implicit prior (pi = 0.5 assumed by the update)
+
+Estimates against the reference (95% bootstrap over episodes):
+  study 1  jev      n= 840  base rate 0.168  pi 0.406 [0.364, 0.450]  Platt slope 1.62, intercept -1.60
+  study 1  haiku    n= 840  base rate 0.168  pi 0.549 [0.523, 0.573]  Platt slope 5.73, intercept -10.72
+  study 2  jev      n= 840  base rate 0.168  pi 0.336 [0.300, 0.374]  Platt slope 2.21, intercept -0.60
+  study 2  haiku    n= 840  base rate 0.168  pi 0.472 [0.441, 0.506]  Platt slope 2.93, intercept -4.37
+  study 2  routed   n= 840  base rate 0.168  pi 0.333 [0.316, 0.351]  Platt slope 12.30, intercept -6.12
+
+Jev per check, study 1:
+  rebalance_logs         base rate 0.17  pi 0.313
+  consumer_cpu_profile   base rate 0.34  pi 0.699
+  partition_lag_spread   base rate 0.17  pi 0.503
+  broker_quota_metrics   base rate 0.17  pi 0.279
+  jvm_gc_logs            base rate 0.17  pi 0.380
+  producer_rate_graph    base rate 0.17  pi 0.328
+  restart_consumer       signal always 0: pi not identifiable
+
+Replay with the corrected reading (mean loss, minutes; 95% paired bootstrap, uncorrected):
+  study 1  jev       19.11 ->  15.19   diff -3.92 [-7.33, -0.66]
+  study 1  haiku     11.70 ->  12.16   diff +0.46 [+0.29, +0.65]
+  study 2  jev       18.68 ->  12.59   diff -6.09 [-9.77, -2.79]
+  study 2  haiku     11.37 ->  12.03   diff +0.66 [+0.40, +0.93]
+  study 2  routed     9.33 ->  10.63   diff +1.29 [+0.64, +2.07] (pi from episodes 0-59, replay on 60-119)
+
+== 2. Restart run before another check (that check's output was recorded before the restart)
+  episode-table pairs, study 1:
+    voi   mixed_eb  jev           0 of 1200 (  0.0%)
+    voi   mixed_eb  reference     0 of 1200 (  0.0%)
+    hesp  eps       jev          58 of  120 ( 48.3%)
+    voi   mixed_eb  haiku         0 of 1200 (  0.0%)
+  episode-table pairs, study 2:
+    voi   mixed_eb  routed        0 of 1200 (  0.0%)
+    voi   mixed_eb  reference     0 of 1200 (  0.0%)
+    voi   mixed_eb  jev           0 of 1200 (  0.0%)
+  Sonnet alone, study 1: episodes    1 of  120 (  0.8%)
+  Sonnet alone, study 2: episodes    4 of  120 (  3.3%)

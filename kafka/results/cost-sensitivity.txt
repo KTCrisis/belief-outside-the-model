@@ -1,0 +1,42 @@
+check costs (minutes):
+  rebalance_logs         conventional  2.0   measured  0.002
+  consumer_cpu_profile   conventional  8.0   measured  0.250
+  partition_lag_spread   conventional  3.0   measured  0.027
+  broker_quota_metrics   conventional  4.0   measured  0.028
+  jvm_gc_logs            conventional  5.0   measured  0.000
+  producer_rate_graph    conventional  2.0   measured  0.206
+  restart_consumer       conventional  1.0   measured  0.622
+
+== conventional costs, study 2, routed reader, M = 60 (mean loss, checks)
+  run every check             25.000   (7 checks, no error with this reader)
+  rule S, lambda = 0.01       50.000   0.00
+  rule S, lambda = 0.03       50.000   0.00
+  rule S, lambda = 0.1        50.000   0.00
+  rule S, lambda = 0.3        50.000   0.00
+  rule S, lambda = 1          50.000   0.00
+  rule S, lambda = 2          50.000   0.00
+  rule S, lambda = 4          33.667   1.83
+  rule S, lambda = 6           9.333   3.33
+  rule S, lambda = 8           9.333   3.33
+  rule S, lambda = 12          9.333   3.33
+  rule S, lambda = 16         11.000   3.67
+  rule S, lambda = 24         12.107   4.01
+  two criteria, lambda = 12    9.333
+  exact optimum (table)        9.333
+
+== measured costs, study 2, routed reader, M = 60 (mean loss, checks)
+  run every check              1.135   (7 checks, no error with this reader)
+  rule S, lambda = 0.01       30.002   2.00
+  rule S, lambda = 0.03       30.002   2.00
+  rule S, lambda = 0.1        10.035   3.23
+  rule S, lambda = 0.3         0.125   4.33
+  rule S, lambda = 1           0.263   4.88
+  rule S, lambda = 2           0.368   5.01
+  rule S, lambda = 4           0.372   5.14
+  rule S, lambda = 6           0.377   5.34
+  rule S, lambda = 8           0.407   5.48
+  rule S, lambda = 12          0.412   5.51
+  rule S, lambda = 16          0.441   5.65
+  rule S, lambda = 24          0.513   6.00
+  two criteria, lambda = 12    0.368
+  exact optimum (table)        0.377

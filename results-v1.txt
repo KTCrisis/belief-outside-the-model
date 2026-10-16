@@ -1,0 +1,18 @@
+4000 incidents, miss 60.0 min, threshold 0.9, lam 12.0 min/bit
+
+rule                          loss    cost  steps  accuracy
+random                 34.12 ±0.39   22.46   6.24     0.806
+cheapest               33.67 ±0.38   22.70   6.71     0.817
+max_info               29.77 ±0.42   18.31   4.85     0.809
+info_per_cost          29.64 ±0.41   18.47   5.00     0.814
+least_action           22.09 ±0.41    8.14   2.96     0.767
+least_action_path      21.89 ±0.41    8.07   2.92     0.770
+bayes_decision         21.88 ±0.42    8.01   2.78     0.769
+
+lam sweep (least_action):
+  lam   2: loss  41.95  cost   0.00  steps 0.00  accuracy 0.301
+  lam   4: loss  33.41  cost   2.00  steps 1.00  accuracy 0.476
+  lam   8: loss  24.02  cost   6.35  steps 2.48  accuracy 0.706
+  lam  12: loss  22.09  cost   8.14  steps 2.96  accuracy 0.767
+  lam  20: loss  23.82  cost  10.44  steps 3.39  accuracy 0.777
+  lam  40: loss  29.22  cost  17.15  steps 4.55  accuracy 0.799

@@ -1,0 +1,46 @@
+== tables counted on main: 120 episodes; empirical k median 1.0 (min 1.0, max 1.0)
+== study2: 120 episodes, 120 kept, excluded per cause: none
+
+Primary endpoints, paired bootstrap, 97.5% intervals (Bonferroni for two)
+H4 routed   9.33 vs Jev  18.68   diff  -9.35 [-14.46, -4.85]  confirmed
+H5 routed   9.33 vs Sonnet   8.63  diff  +0.70 [+0.34, +1.08]  margin +2  confirmed (not worse by 2 min)  (n=120)
+
+Secondary (exploratory): the hybrid per reader, on the mean table (calibration) and averaged tables (loss)
+  reader           loss  right checks  Brier   logS readBrier  $/diag
+  routed           9.33 100.0%   3.33  0.018  0.118     0.001  0.0036
+  jev             18.68  88.3%   4.02  0.120  0.275     0.026  0.0000
+  haiku           11.37  99.2%   3.53  0.044  0.176     0.019  0.0109
+  reference        9.33 100.0%   3.33  0.002  0.034     0.000  0.0000
+  sonnet_narrow   10.14  99.2%   3.53  0.031  0.137     0.004  0.0168
+  haiku_context   11.06 100.0%   3.67  0.033  0.167     0.011  0.0204
+  haiku_seq       21.66  85.8%   3.94  0.263  0.568     0.115  0.0352
+  haiku_seqn      19.74  89.2%   4.02  0.220  0.512     0.123  0.0361
+  Sonnet alone     8.63 100.0%   3.06                          0.0226
+  Sonnet alone: conclusion supported by its own path (posterior >= 0.8) 86.7%; right but unsupported 13.3%
+
+Pull toward the suspected cause (shift x (2 P(signal | named cause) - 1)), within reference strata
+  haiku_context  reference absent   +0.007 [-0.001, +0.016]  (n=699)
+  haiku_context  reference present  -0.010 [-0.016, -0.001]  (n=141)
+  haiku_seq      reference absent   +0.022 [+0.001, +0.044]  (n=699)
+  haiku_seq      reference present  -0.040 [-0.047, -0.032]  (n=141)
+  haiku_seqn     reference absent   +0.015 [-0.007, +0.036]  (n=699)
+  haiku_seqn     reference present  -0.040 [-0.044, -0.033]  (n=141)
+
+Readings on the wrong side of the reference, per check
+  check                         routed           jev         haiku sonnet_narrow haiku_context     haiku_seq    haiku_seqn
+  rebalance_logs                  0.0%          0.0%          0.0%          0.0%          0.0%          3.3%         11.7%
+  consumer_cpu_profile            0.0%          0.0%          0.8%          0.0%          1.7%         17.5%         21.7%
+  partition_lag_spread            0.0%          2.5%          4.2%          0.0%         15.8%         52.5%         52.5%
+  broker_quota_metrics            0.0%          0.0%          0.0%          0.0%          0.0%          1.7%          0.0%
+  jvm_gc_logs                     0.0%          0.0%          0.0%          0.0%          0.0%          0.0%          2.5%
+  producer_rate_graph             0.0%         18.3%          2.5%          1.7%          1.7%         21.7%         20.8%
+  restart_consumer                0.0%          0.8%          0.0%          0.0%          0.0%          0.0%          0.8%
+  routed: failed extractions 0 of 1440
+
+Study 1 repeated on the new series (tables counted on study 1, Jev reader)
+  H1 mixed empirical k  18.68 vs LLM  23.68  diff  -5.00 [-8.19, -1.87]
+  H2 priced stop  18.77 vs HESP  22.02  diff  -3.26 [-3.95, -2.58]
+
+Format shift (exploratory): the hybrid on the shifted copy
+  reference   33.07  (unshifted   9.33)
+  routed       9.33  (unshifted   9.33)

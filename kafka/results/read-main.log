@@ -1,0 +1,2 @@
+readings-main.jsonl: 120 episodes x 7 checks, readers ['reference', 'jev', 'haiku']
+haiku tokens: {'in': 2337405, 'out': 46138}

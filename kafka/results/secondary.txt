@@ -1,0 +1,97 @@
+== study 1 (main), Jev reader
+
+HESP's own metric (share of episodes ending on the true cause), every rule x table
+                    designer       llm   counted       eps   mixed10  mixed_eb
+  voi                  0.875     0.787     0.875     0.875     0.878     0.877
+  ratio_priced         0.875     0.753     0.875     0.875     0.878     0.877
+  hesp                 0.800     0.829     0.875     0.875     0.831     0.860
+  bayes                0.833     0.830     0.875     0.875     0.846     0.878
+  cheapest             0.800     0.829     0.875     0.875     0.831     0.860
+  most_informative     0.800     0.829     0.875     0.875     0.831     0.860
+
+Designer table against the counted table (all 120 episodes, reference reading)
+  cells where the designer and the observed frequency fall on opposite sides of 0.5:
+    consumer_cpu_profile   | upstream_burst     designer 0.10  observed 1.00  (20/20)
+    restart_consumer       | rebalancing        designer 0.60  observed 0.00  (0/20)
+    restart_consumer       | gc_pauses          designer 0.60  observed 0.00  (0/20)
+  3 of 42 cells contradicted; mean absolute gap 0.158, cells off by more than 0.3: 5
+
+== study 2: pull toward the suspected cause, per check and per named cause
+  haiku_context | reference absent
+    check       broker_quota_metrics   -0.011 [-0.015, -0.007]  (n=100)
+    check       consumer_cpu_profile   +0.043 [+0.017, +0.078]  (n=79)
+    check       jvm_gc_logs            +0.000 [-0.003, +0.003]  (n=100)
+    check       partition_lag_spread   +0.030 [-0.016, +0.079]  (n=100)
+    check       producer_rate_graph    +0.023 [+0.001, +0.044]  (n=100)
+    check       rebalance_logs         +0.023 [+0.015, +0.032]  (n=100)
+    check       restart_consumer       -0.040 [-0.043, -0.037]  (n=120)
+    named cause broker_throttling      +0.000 [+0.000, +0.000]  (n=8)
+    named cause partition_skew         +0.097 [+0.054, +0.146]  (n=83)
+    named cause rebalancing            -0.352 [-0.544, -0.156]  (n=9)
+    named cause slow_consumer          +0.032 [+0.023, +0.045]  (n=261)
+    named cause upstream_burst         -0.024 [-0.029, -0.020]  (n=338)
+  haiku_context | reference present
+    check       broker_quota_metrics   -0.004 [-0.009, +0.000]  (n=20)
+    check       consumer_cpu_profile   -0.017 [-0.032, +0.008]  (n=41)
+    check       jvm_gc_logs            +0.003 [-0.004, +0.010]  (n=20)
+    check       partition_lag_spread   +0.036 [+0.029, +0.047]  (n=20)
+    check       producer_rate_graph    -0.030 [-0.032, -0.029]  (n=20)
+    check       rebalance_logs         -0.037 [-0.039, -0.033]  (n=20)
+    named cause broker_throttling      -0.004 [-0.009, +0.000]  (n=20)
+    named cause gc_pauses              +0.003 [-0.004, +0.010]  (n=20)
+    named cause partition_skew         +0.036 [+0.029, +0.047]  (n=20)
+    named cause rebalancing            -0.037 [-0.039, -0.033]  (n=20)
+    named cause slow_consumer          -0.017 [-0.032, +0.009]  (n=41)
+    named cause upstream_burst         -0.030 [-0.032, -0.029]  (n=20)
+  haiku_seq | reference absent
+    check       broker_quota_metrics   -0.088 [-0.113, -0.069]  (n=100)
+    check       consumer_cpu_profile   +0.238 [+0.162, +0.323]  (n=79)
+    check       jvm_gc_logs            +0.070 [+0.068, +0.072]  (n=100)
+    check       partition_lag_spread   +0.168 [+0.078, +0.256]  (n=100)
+    check       producer_rate_graph    -0.033 [-0.100, +0.030]  (n=100)
+    check       rebalance_logs         -0.101 [-0.132, -0.075]  (n=100)
+    check       restart_consumer       -0.041 [-0.044, -0.039]  (n=120)
+    named cause gc_pauses              +0.098 [+0.098, +0.098]  (n=2)
+    named cause partition_skew         +0.163 [+0.053, +0.266]  (n=89)
+    named cause rebalancing            -0.520 [-0.625, -0.389]  (n=16)
+    named cause slow_consumer          +0.058 [+0.028, +0.091]  (n=262)
+    named cause upstream_burst         -0.018 [-0.033, -0.005]  (n=330)
+  haiku_seq | reference present
+    check       broker_quota_metrics   -0.032 [-0.036, -0.029]  (n=20)
+    check       consumer_cpu_profile   -0.031 [-0.046, -0.008]  (n=41)
+    check       jvm_gc_logs            -0.092 [-0.105, -0.079]  (n=20)
+    check       partition_lag_spread   -0.029 [-0.039, -0.015]  (n=20)
+    check       producer_rate_graph    -0.031 [-0.033, -0.030]  (n=20)
+    check       rebalance_logs         -0.034 [-0.039, -0.028]  (n=20)
+    named cause broker_throttling      -0.032 [-0.036, -0.029]  (n=20)
+    named cause gc_pauses              -0.092 [-0.106, -0.079]  (n=20)
+    named cause partition_skew         -0.029 [-0.039, -0.015]  (n=20)
+    named cause rebalancing            -0.034 [-0.039, -0.028]  (n=20)
+    named cause slow_consumer          -0.031 [-0.046, -0.008]  (n=41)
+    named cause upstream_burst         -0.031 [-0.033, -0.030]  (n=20)
+  haiku_seqn | reference absent
+    check       broker_quota_metrics   -0.072 [-0.079, -0.065]  (n=100)
+    check       consumer_cpu_profile   +0.273 [+0.193, +0.352]  (n=79)
+    check       jvm_gc_logs            +0.095 [+0.079, +0.115]  (n=100)
+    check       partition_lag_spread   +0.163 [+0.076, +0.247]  (n=100)
+    check       producer_rate_graph    -0.076 [-0.133, -0.018]  (n=100)
+    check       rebalance_logs         -0.164 [-0.215, -0.118]  (n=100)
+    check       restart_consumer       -0.048 [-0.064, -0.039]  (n=120)
+    named cause gc_pauses              +0.145 [+0.101, +0.196]  (n=34)
+    named cause partition_skew         +0.184 [+0.096, +0.269]  (n=94)
+    named cause rebalancing            -0.487 [-0.589, -0.373]  (n=22)
+    named cause slow_consumer          +0.034 [-0.015, +0.085]  (n=196)
+    named cause upstream_burst         -0.023 [-0.034, -0.011]  (n=353)
+  haiku_seqn | reference present
+    check       broker_quota_metrics   -0.035 [-0.041, -0.031]  (n=20)
+    check       consumer_cpu_profile   -0.034 [-0.046, -0.013]  (n=41)
+    check       jvm_gc_logs            -0.069 [-0.076, -0.062]  (n=20)
+    check       partition_lag_spread   -0.039 [-0.046, -0.030]  (n=20)
+    check       producer_rate_graph    -0.031 [-0.032, -0.029]  (n=20)
+    check       rebalance_logs         -0.034 [-0.038, -0.030]  (n=20)
+    named cause broker_throttling      -0.035 [-0.041, -0.031]  (n=20)
+    named cause gc_pauses              -0.069 [-0.076, -0.063]  (n=20)
+    named cause partition_skew         -0.039 [-0.046, -0.030]  (n=20)
+    named cause rebalancing            -0.034 [-0.038, -0.030]  (n=20)
+    named cause slow_consumer          -0.034 [-0.046, -0.013]  (n=41)
+    named cause upstream_burst         -0.031 [-0.032, -0.029]  (n=20)

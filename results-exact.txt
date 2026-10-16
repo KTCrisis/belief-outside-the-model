@@ -1,0 +1,19 @@
+miss 60.0 min, lam 12.0 min/bit, threshold 0.9  (exact expectations, no sampling)
+
+rule                    loss  minutes  accuracy  gap to optimum
+OPTIMUM (DP)           21.49                                      first move: rebalance_logs
+cheapest               34.02    22.78     0.813          +12.53
+max_info               29.67    18.42     0.812           +8.18
+info_per_cost          29.77    18.46     0.811           +8.29
+least_action           22.02     8.11     0.768           +0.53
+least_action_path      21.88     8.02     0.769           +0.39
+bayes_decision         21.73     7.89     0.769           +0.24
+
+lam sweep, least_action (exact):
+  lam   6: loss  33.50  gap +12.01
+  lam   8: loss  23.63  gap +2.14
+  lam  10: loss  23.63  gap +2.14
+  lam  12: loss  22.02  gap +0.53
+  lam  14: loss  22.12  gap +0.64
+  lam  16: loss  22.12  gap +0.64
+  lam  20: loss  23.60  gap +2.11

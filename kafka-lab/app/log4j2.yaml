@@ -1,0 +1,30 @@
+# Client logs as an on-call engineer would read them: the consumer
+# coordinator at INFO (joins, revocations, assignments), the rest at WARN.
+Configuration:
+  Appenders:
+    Console:
+      name: STDOUT
+      PatternLayout:
+        Pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [${sys:lab.name}] %c{1} - %m%n"
+    File:
+      name: FILE
+      fileName: "/logs/${sys:lab.name}.log"
+      PatternLayout:
+        Pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [${sys:lab.name}] %c{1} - %m%n"
+  Loggers:
+    Root:
+      level: warn
+      AppenderRef: [{ref: STDOUT}, {ref: FILE}]
+    Logger:
+      - name: org.apache.kafka.clients.consumer.internals.ConsumerCoordinator
+        level: info
+        additivity: false
+        AppenderRef: [{ref: STDOUT}, {ref: FILE}]
+      - name: org.apache.kafka.clients.consumer.internals.AbstractCoordinator
+        level: info
+        additivity: false
+        AppenderRef: [{ref: STDOUT}, {ref: FILE}]
+      - name: lab
+        level: info
+        additivity: false
+        AppenderRef: [{ref: STDOUT}, {ref: FILE}]

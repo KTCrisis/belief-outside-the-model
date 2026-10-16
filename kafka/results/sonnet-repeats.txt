@@ -1,0 +1,11 @@
+== Sonnet alone on study 2: runs found ['preregistered', 'run2', 'run3'], complete ['preregistered', 'run2', 'run3']
+   routed hybrid 9.33 min
+
+  run              loss   right  checks       $   H5 diff [97.5% CI]
+  run2             8.60 120/120    3.05    2.64   +0.73 [+0.38, +1.12] holds
+  run3             9.48 118/120    3.00    2.59   -0.15 [-1.97, +1.05] holds
+  preregistered    8.63 120/120    3.06    2.71   +0.70 [+0.35, +1.09] holds
+  mean of runs     8.91                           +0.43 [-0.28, +1.01] holds
+
+  episodes whose loss differs across runs: 17 of 120; path differs: 17; named cause differs: 2
+  mean per-episode standard deviation of the loss: 0.68 min; spread of the run means: 8.60 to 9.48

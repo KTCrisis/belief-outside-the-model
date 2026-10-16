@@ -1,0 +1,46 @@
+== main: 120 episodes, 120 kept, excluded per cause: none
+fold A: 60 evaluated, tables counted on 60; empirical k: median 1.0 (min 1.0, max 1.0)
+fold B: 60 evaluated, tables counted on 60; empirical k: median 1.0 (min 1.0, max 1.0)
+
+Primary endpoints, paired bootstrap, 98.33% intervals (Bonferroni for three)
+H1 table  mixed empirical k  19.11  vs LLM  24.80   diff  -5.69 [-8.89, -2.72]  confirmed
+H2 stop   priced             19.73  vs HESP  23.10  diff  -3.37 [-4.24, -2.52]  confirmed
+H3 hybrid                    19.11  vs Sonnet   8.56 diff +10.55 [+6.00, +15.75]  contradicted  (n=120)
+
+Secondary (exploratory): mean loss by rule x table, Jev reader
+  voi              designer  19.04 | llm  24.80 | counted  19.17 | eps  19.73 | mixed10  19.08 | mixed_eb  19.11
+  ratio_priced     designer  18.83 | llm  26.08 | counted  19.17 | eps  19.73 | mixed10  18.97 | mixed_eb  19.11
+  hesp             designer  34.91 | llm  34.26 | counted  30.90 | eps  23.10 | mixed10  30.96 | mixed_eb  25.17
+  bayes            designer  23.45 | llm  24.65 | counted  19.17 | eps  18.93 | mixed10  22.22 | mixed_eb  18.81
+  cheapest         designer  36.07 | llm  35.16 | counted  32.50 | eps  24.47 | mixed10  34.14 | mixed_eb  28.46
+  most_informative designer  36.12 | llm  35.01 | counted  31.75 | eps  28.07 | mixed10  33.70 | mixed_eb  30.20
+  readers, voi + mixed_eb: reference   9.33 | jev  19.11 | haiku  11.70
+
+HESP's own metric (share correct), Jev reader
+  voi            mixed_eb  0.877
+  ratio_priced   eps       0.875
+  hesp           eps       0.875
+  bayes          mixed_eb  0.878
+  Sonnet alone   1.000   (2.64 $)
+
+Reading agreement with the reference (Brier, share on the wrong side)
+  jev    rebalance_logs         Brier 0.000  wrong side 0.0%
+  jev    consumer_cpu_profile   Brier 0.104  wrong side 16.7%
+  jev    partition_lag_spread   Brier 0.030  wrong side 3.3%
+  jev    broker_quota_metrics   Brier 0.000  wrong side 0.0%
+  jev    jvm_gc_logs            Brier 0.009  wrong side 0.0%
+  jev    producer_rate_graph    Brier 0.136  wrong side 24.2%
+  jev    restart_consumer       Brier 0.001  wrong side 0.0%
+  jev    textual 0.038 vs numeric 0.042  (prediction: textual lower)
+  haiku  rebalance_logs         Brier 0.006  wrong side 0.0%
+  haiku  consumer_cpu_profile   Brier 0.296  wrong side 41.7%
+  haiku  partition_lag_spread   Brier 0.029  wrong side 0.8%
+  haiku  broker_quota_metrics   Brier 0.002  wrong side 0.0%
+  haiku  jvm_gc_logs            Brier 0.020  wrong side 0.0%
+  haiku  producer_rate_graph    Brier 0.062  wrong side 5.8%
+  haiku  restart_consumer       Brier 0.008  wrong side 0.8%
+  haiku  textual 0.107 vs numeric 0.025  (prediction: textual lower)
+
+Informative censoring (addendum 2): tables from a self-chosen history, voi + Jev on the other fold
+  llm k=10  self-chosen  22.41 vs complete  19.08  (checks per history episode, last prior: 3.37)
+  no prior  self-chosen  50.00 vs complete  19.17  (checks per history episode, last prior: 0.00)

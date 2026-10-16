@@ -1,0 +1,18 @@
+[kafka] table estimated by claude-haiku-4-5 (median of 5), cost $0.0874, MAE vs truth 0.058
+[kafka] table learned from mem7 {'incidents': 120, 'weight': 67.0, 'min_runs_per_cell': 2.9}, MAE vs truth 0.111 (no forgetting: 0.088)
+== kafka: 200 incidents, miss 60 min, model claude-haiku-4-5
+agent                  loss  minutes  checks  accuracy  $/episode
+oracle         23.52 ± 1.94     8.21    2.98     0.745     0.0000
+hybrid_mem_flat   24.89 ± 2.02     6.89    2.93     0.700     0.0008
+hybrid_llm     24.59 ± 1.94     8.39    3.41     0.730     0.0009
+llm            31.20 ± 2.03    13.80    4.18     0.710     0.0096
+llm_mem        25.12 ± 1.96     9.22    3.12     0.735     0.0098
+[internet] table estimated by claude-haiku-4-5 (median of 5), cost $0.0937, MAE vs truth 0.061
+[internet] table learned from mem7 {'incidents': 120, 'weight': 64.4, 'min_runs_per_cell': 1.6}, MAE vs truth 0.133 (no forgetting: 0.087)
+== internet: 200 incidents, miss 45 min, model claude-haiku-4-5
+agent                  loss  minutes  checks  accuracy  $/episode
+oracle         16.27 ± 1.31     7.50    3.26     0.805     0.0000
+hybrid_mem_flat   22.45 ± 1.47     7.38    3.56     0.665     0.0009
+hybrid_llm     18.13 ± 1.35     9.80    3.54     0.815     0.0009
+llm            21.61 ± 1.42    11.48    3.92     0.775     0.0091
+llm_mem        21.09 ± 1.35    10.73    3.71     0.770     0.0116

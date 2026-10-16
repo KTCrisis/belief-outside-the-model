@@ -1,0 +1,21 @@
+study 2, 120 faults, the 10 mixed tables counted on study 1, M = 60, lambda = 12
+reader       rule      loss   right  checks  minutes
+reference    voi        9.33 100.0%   3.33    9.33
+reference    optimal    9.33 100.0%   3.33    9.33
+routed       voi        9.33 100.0%   3.33    9.33
+routed       optimal    9.33 100.0%   3.33    9.33
+reference: paths differ in 840 of 1200 episode-table pairs, losses in 280
+routed: paths differ in 840 of 1200 episode-table pairs, losses in 280
+reference: rule minus optimum +0.00 [-0.15, +0.14] (95 % paired bootstrap, uncorrected)
+routed: rule minus optimum +0.00 [-0.14, +0.14] (95 % paired bootstrap, uncorrected)
+
+price of an error M, routed reader, study 2 (mean loss, minutes)
+M     guess  rule l=12  rule l=M/4  game A  hybrid S/A  optimum
+2      1.67       9.33        1.67    1.67        1.67     1.67
+4      3.33       9.33        3.33    3.33        3.33     3.33
+8      6.67       9.33        6.67    6.67        6.67     6.67
+15    12.50       9.33       11.17    9.33        9.33     9.33
+30    25.00       9.33        9.33    9.33        9.33     9.33
+60    50.00       9.33       10.53    9.33        9.33     9.33
+120   100.00       9.33       15.99   10.60        9.67    11.93
+240   200.00       9.33       20.29   16.19        9.67    16.36

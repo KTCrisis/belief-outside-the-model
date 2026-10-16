@@ -1,0 +1,12 @@
+scenario internet: 4000 incidents, miss 45.0 min, threshold 0.9, lam 12.0 min/bit
+
+rule                          loss    cost  steps  accuracy
+random                 30.01 ±0.26   24.72   6.30     0.882
+cheapest               28.92 ±0.27   23.66   6.99     0.883
+max_info               24.30 ±0.27   19.25   3.94     0.888
+info_per_cost          24.61 ±0.29   19.18   5.53     0.879
+least_action           15.27 ±0.27    7.90   3.36     0.836
+least_action_path      15.33 ±0.28    8.38   3.42     0.846
+bayes_decision         17.39 ±0.29    9.15   3.20     0.817
+
+lam sweep (least_action):

@@ -1,0 +1,118 @@
+  3 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00694 $
+  4 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'broker_quota_metrics', 'jvm_gc_logs'] 0.0118 $
+  5 rebalancing        -> rebalancing        ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs'] 0.0118 $
+  6 partition_skew     -> slow_consumer      BAD ['partition_lag_spread', 'producer_rate_graph', 'consumer_cpu_profile'] 0.01094 $
+  7 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01299 $
+  8 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00912 $
+  9 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph', 'partition_lag_spread', 'jvm_gc_logs'] 0.00956 $
+ 10 slow_consumer      -> slow_consumer      ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.02039 $
+ 11 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs', 'rebalance_logs'] 0.01575 $
+ 12 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01398 $
+ 13 rebalancing        -> rebalancing        ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs'] 0.01126 $
+ 14 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph', 'consumer_cpu_profile'] 0.0092 $
+ 15 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00605 $
+ 16 slow_consumer      -> slow_consumer      ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01912 $
+ 17 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01313 $
+ 18 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01233 $
+ 19 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01788 $
+ 20 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00892 $
+ 21 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'rebalance_logs', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.0169 $
+ 22 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00667 $
+ 23 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.0062 $
+ 24 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01857 $
+ 25 rebalancing        -> slow_consumer      BAD ['partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.02148 $
+ 26 gc_pauses          -> gc_pauses          ok  ['producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.00951 $
+ 27 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01469 $
+ 28 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00611 $
+ 29 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph', 'consumer_cpu_profile'] 0.00997 $
+ 30 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'jvm_gc_logs', 'broker_quota_metrics', 'rebalance_logs'] 0.01574 $
+ 31 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00664 $
+ 32 rebalancing        -> rebalancing        ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs'] 0.01 $
+ 33 gc_pauses          -> gc_pauses          ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01518 $
+ 34 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00623 $
+ 35 slow_consumer      -> slow_consumer      ok  ['rebalance_logs', 'producer_rate_graph', 'partition_lag_spread', 'consumer_cpu_profile'] 0.00994 $
+ 36 rebalancing        -> rebalancing        ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs'] 0.01053 $
+ 37 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00706 $
+ 38 gc_pauses          -> slow_consumer      BAD ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs', 'consumer_cpu_profile', 'broker_quota_metrics'] 0.01844 $
+ 39 slow_consumer      -> slow_consumer      ok  ['rebalance_logs', 'partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01927 $
+ 40 upstream_burst     -> upstream_burst     ok  ['rebalance_logs', 'partition_lag_spread', 'producer_rate_graph'] 0.00791 $
+ 41 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'consumer_cpu_profile', 'broker_quota_metrics', 'rebalance_logs'] 0.01738 $
+ 42 slow_consumer      -> slow_consumer      ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01772 $
+ 43 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs'] 0.01051 $
+ 44 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01173 $
+ 45 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00883 $
+ 46 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00593 $
+ 47 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00638 $
+ 48 slow_consumer      -> slow_consumer      ok  ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01586 $
+ 49 rebalancing        -> rebalancing        ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs'] 0.01118 $
+ 50 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01243 $
+ 51 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00635 $
+ 52 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics'] 0.01189 $
+ 53 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00633 $
+ 54 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01985 $
+ 55 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00848 $
+ 56 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00694 $
+ 57 gc_pauses          -> gc_pauses          ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01451 $
+ 58 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'broker_quota_metrics'] 0.01521 $
+ 59 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00662 $
+ 60 gc_pauses          -> slow_consumer      BAD ['partition_lag_spread', 'rebalance_logs', 'producer_rate_graph', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01997 $
+ 61 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'consumer_cpu_profile', 'rebalance_logs'] 0.01696 $
+ 62 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics'] 0.01203 $
+ 63 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00915 $
+ 64 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00557 $
+ 65 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01826 $
+ 66 gc_pauses          -> gc_pauses          ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01479 $
+ 67 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00592 $
+ 68 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'rebalance_logs', 'producer_rate_graph'] 0.00865 $
+ 69 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01949 $
+ 70 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs', 'broker_quota_metrics', 'rebalance_logs', 'consumer_cpu_profile'] 0.02068 $
+ 71 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00905 $
+ 72 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01875 $
+ 73 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs', 'consumer_cpu_profile', 'broker_quota_metrics'] 0.01739 $
+ 74 gc_pauses          -> slow_consumer      BAD ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.02048 $
+ 75 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00642 $
+ 76 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00588 $
+ 77 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00866 $
+ 78 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01194 $
+ 79 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs'] 0.01047 $
+ 80 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'broker_quota_metrics'] 0.01502 $
+ 81 slow_consumer      -> slow_consumer      ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.02074 $
+ 82 rebalancing        -> rebalancing        ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs'] 0.01129 $
+ 83 gc_pauses          -> slow_consumer      BAD ['rebalance_logs', 'partition_lag_spread', 'producer_rate_graph', 'consumer_cpu_profile'] 0.01075 $
+ 84 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00605 $
+ 85 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs'] 0.01052 $
+ 86 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics'] 0.00899 $
+ 87 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph', 'consumer_cpu_profile'] 0.00877 $
+ 88 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01792 $
+ 89 rebalancing        -> rebalancing        ok  ['rebalance_logs', 'partition_lag_spread'] 0.01012 $
+ 90 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00905 $
+ 91 slow_consumer      -> slow_consumer      ok  ['rebalance_logs', 'producer_rate_graph', 'partition_lag_spread', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01839 $
+ 92 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01531 $
+ 93 gc_pauses          -> slow_consumer      BAD ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01658 $
+ 94 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00618 $
+ 95 upstream_burst     -> upstream_burst     ok  ['rebalance_logs', 'partition_lag_spread', 'producer_rate_graph', 'consumer_cpu_profile'] 0.01194 $
+ 96 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00898 $
+ 97 partition_skew     -> partition_skew     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00668 $
+ 98 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01574 $
+ 99 slow_consumer      -> slow_consumer      ok  ['partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs', 'rebalance_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01971 $
+100 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph', 'jvm_gc_logs'] 0.00613 $
+101 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01476 $
+102 upstream_burst     -> upstream_burst     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00567 $
+103 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'jvm_gc_logs', 'broker_quota_metrics'] 0.01653 $
+104 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs', 'jvm_gc_logs', 'producer_rate_graph'] 0.02114 $
+105 partition_skew     -> partition_skew     ok  ['rebalance_logs', 'producer_rate_graph', 'partition_lag_spread'] 0.00754 $
+106 broker_throttling  -> broker_throttling  ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics'] 0.0117 $
+107 slow_consumer      -> slow_consumer      ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01893 $
+108 gc_pauses          -> gc_pauses          ok  ['partition_lag_spread', 'producer_rate_graph', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs', 'consumer_cpu_profile'] 0.01975 $
+109 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph'] 0.00345 $
+110 rebalancing        -> rebalancing        ok  ['partition_lag_spread', 'rebalance_logs'] 0.00894 $
+111 slow_consumer      -> slow_consumer      ok  ['rebalance_logs', 'partition_lag_spread', 'producer_rate_graph', 'jvm_gc_logs', 'broker_quota_metrics', 'consumer_cpu_profile'] 0.01919 $
+112 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00659 $
+113 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01385 $
+114 partition_skew     -> partition_skew     ok  ['partition_lag_spread', 'producer_rate_graph'] 0.00641 $
+115 gc_pauses          -> slow_consumer      BAD ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs', 'consumer_cpu_profile'] 0.01149 $
+116 broker_throttling  -> broker_throttling  ok  ['producer_rate_graph', 'partition_lag_spread', 'consumer_cpu_profile', 'rebalance_logs', 'broker_quota_metrics'] 0.01747 $
+117 rebalancing        -> rebalancing        ok  ['producer_rate_graph', 'partition_lag_spread', 'rebalance_logs'] 0.01067 $
+118 slow_consumer      -> slow_consumer      ok  ['partition_lag_spread', 'producer_rate_graph', 'broker_quota_metrics', 'jvm_gc_logs'] 0.01392 $
+119 upstream_burst     -> upstream_burst     ok  ['producer_rate_graph', 'partition_lag_spread'] 0.00625 $
+total 1.422 $

@@ -1,0 +1,5 @@
+[internet] table estimated by claude-haiku-4-5 (median of 5), cost $0.0000, MAE vs truth 0.061
+[internet] table learned from mem7 {'incidents': 120, 'weight': 64.4, 'min_runs_per_cell': 1.6}, MAE vs truth 0.133 (no forgetting: 0.087)
+== internet: 100 incidents, miss 45 min, model claude-haiku-4-5
+agent                  loss  minutes  checks  accuracy  $/episode
+llm_calc_def   19.77 ± 2.06     8.97    3.59     0.760     0.0251

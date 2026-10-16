@@ -1,0 +1,6 @@
+kafka  M=60  states=2187  optimum V0=21.49
+  all states     V ~ a*H: a=15.13 min/bit (M/a=3.97) R2=0.553 | V ~ b*M*risk: b=0.88 R2=0.710
+  3+ tests left  V ~ a*H: a=13.47 min/bit (M/a=4.46) R2=0.421 | V ~ b*M*risk: b=0.80 R2=0.500
+internet  M=45  states=6562  optimum V0=15.26
+  all states     V ~ a*H: a= 9.52 min/bit (M/a=4.73) R2=0.725 | V ~ b*M*risk: b=0.74 R2=0.659
+  3+ tests left  V ~ a*H: a= 8.68 min/bit (M/a=5.18) R2=0.715 | V ~ b*M*risk: b=0.67 R2=0.564

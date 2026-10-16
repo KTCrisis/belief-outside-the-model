@@ -1,0 +1,19 @@
+scenario clinic: miss 200.0 min, lam 50.0 min/bit, threshold 0.9  (exact expectations, no sampling)
+
+rule                    loss  minutes  accuracy  gap to optimum
+OPTIMUM (DP)           75.91                                      first move: auscultation
+cheapest              139.62   111.58     0.860          +63.71
+max_info              147.67   118.78     0.856          +71.76
+info_per_cost         138.07   109.77     0.859          +62.16
+least_action           76.51    33.92     0.787           +0.60
+least_action_path      75.91    33.75     0.789           +0.00
+bayes_decision         75.91    33.75     0.789           +0.00
+
+lam sweep, least_action (exact):
+  lam   6: loss 130.00  gap +54.09
+  lam   8: loss 130.00  gap +54.09
+  lam  10: loss 130.00  gap +54.09
+  lam  12: loss 130.00  gap +54.09
+  lam  14: loss 130.00  gap +54.09
+  lam  16: loss 130.00  gap +54.09
+  lam  20: loss 114.50  gap +38.59

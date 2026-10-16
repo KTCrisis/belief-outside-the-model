@@ -1,0 +1,19 @@
+scenario internet: miss 45.0 min, lam 12.0 min/bit, threshold 0.9  (exact expectations, no sampling)
+
+rule                    loss  minutes  accuracy  gap to optimum
+OPTIMUM (DP)           15.26                                      first move: look_at_box_lights
+cheapest               28.96    23.57     0.880          +13.69
+max_info               24.48    19.18     0.882           +9.22
+info_per_cost          24.26    19.02     0.884           +8.99
+least_action           15.30     7.88     0.835           +0.03
+least_action_path      15.47     8.46     0.844           +0.20
+bayes_decision         17.66     9.20     0.812           +2.40
+
+lam sweep, least_action (exact):
+  lam   6: loss  21.92  gap +6.66
+  lam   8: loss  18.07  gap +2.80
+  lam  10: loss  15.80  gap +0.53
+  lam  12: loss  15.30  gap +0.03
+  lam  14: loss  15.39  gap +0.13
+  lam  16: loss  15.47  gap +0.20
+  lam  20: loss  18.27  gap +3.00

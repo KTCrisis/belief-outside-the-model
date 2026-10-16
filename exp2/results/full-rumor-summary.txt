@@ -1,0 +1,7 @@
+rumor: 200 claims, 60 true, 30 with a retraction, miss 40 min
+agent                   loss  minutes  sources  accuracy  $/episode
+oracle           7.40 ± 0.52     6.00     1.00     0.965     0.0000
+hybrid_naive    12.38 ± 1.23     3.38     1.67     0.775     0.0007
+hybrid_prov      7.63 ± 0.75     5.03     1.99     0.935     0.0008
+llm             11.27 ± 0.77     8.27     2.67     0.925     0.0053
+llm_mem          9.36 ± 0.75     6.16     1.66     0.920     0.0064

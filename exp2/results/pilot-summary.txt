@@ -1,0 +1,18 @@
+
+[kafka] elicited table (rows = checks, cols = causes), cost $0.0046
+mean absolute error vs truth: 0.075
+
+== kafka: 20 incidents, miss 60 min, model claude-haiku-4-5
+agent              loss  minutes  checks  accuracy  $/episode
+oracle     29.75 ± 7.23     8.75    3.05     0.650     0.0000
+hybrid     24.90 ± 6.37     6.90    3.25     0.700     0.0009
+llm        33.90 ± 6.88    12.90    4.00     0.650     0.0090
+
+[internet] elicited table (rows = checks, cols = causes), cost $0.0050
+mean absolute error vs truth: 0.143
+
+== internet: 20 incidents, miss 45 min, model claude-haiku-4-5
+agent              loss  minutes  checks  accuracy  $/episode
+oracle     15.05 ± 3.96     8.30    3.45     0.850     0.0000
+hybrid     32.45 ± 4.87     5.45    2.70     0.400     0.0007
+llm        21.25 ± 4.73    12.25    4.30     0.800     0.0090

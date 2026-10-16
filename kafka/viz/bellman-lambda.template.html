@@ -1,0 +1,221 @@
+<title>Bellman et lambda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a lab notebook on faint graph paper, one column of four numbered panels that follow the reasoning */
+:root{
+  --bg:#f4f6f3; --panel:#ffffff; --fg:#1c2427; --muted:#5a676c; --grid:#dde3de; --line:#c9d1cb;
+  --accent:#1d5e8a; --brass:#a06a1e; --bad:#b0412c; --ok:#2f7a4d;
+  --serif:"IBM Plex Serif",Georgia,serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#10161a; --panel:#151d22; --fg:#e2e8ea; --muted:#94a2a8; --grid:#1f2a31; --line:#2c3a43;
+  --accent:#6db2e0; --brass:#d9a655; --bad:#e3785f; --ok:#6cc08f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10161a; --panel:#151d22; --fg:#e2e8ea; --muted:#94a2a8; --grid:#1f2a31; --line:#2c3a43;
+  --accent:#6db2e0; --brass:#d9a655; --bad:#e3785f; --ok:#6cc08f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--sans);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;background-attachment:fixed}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:grid;gap:22px}
+header h1{font:600 clamp(28px,5vw,40px)/1.15 var(--serif);margin:0;text-wrap:balance}
+header p{margin:.6em 0 0;max-width:65ch;color:var(--muted)}
+.eq{font-family:var(--mono);font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;overflow-x:auto;display:grid;gap:6px}
+.eq span{white-space:nowrap}.eq b{color:var(--accent);font-weight:500}
+section.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 18px 16px;display:grid;gap:12px;min-width:0}
+.kicker{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--brass)}
+h2{font:600 22px/1.25 var(--serif);margin:0;text-wrap:balance}
+.panel p{margin:0;max-width:68ch}
+.controls{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.ctl{display:grid;gap:2px;min-width:150px;flex:1 1 150px}
+.ctl label{font:12px var(--mono);color:var(--muted);display:flex;justify-content:space-between}
+.ctl label output{color:var(--fg);font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.seg{display:flex;gap:4px;flex-wrap:wrap}
+.seg button{font:12px var(--mono);padding:5px 10px;border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:4px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.seg button:focus-visible,input:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+svg{width:100%;height:auto;display:block}
+svg text{fill:var(--muted);font:11px var(--mono)}
+.readout{font:13px/1.5 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.readout strong{color:var(--fg);font-weight:500}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font:12px var(--mono);color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:6px}
+.note{font-size:14px;color:var(--muted)}
+footer{font:12px/1.6 var(--mono);color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="kicker">Carnet · bayes-action · exploratoire</div>
+  <h1>Bellman et lambda</h1>
+  <p>Ce carnet suit l'ordre du raisonnement. On calcule d'abord la vraie valeur V d'une croyance par l'équation de Bellman. On la compare ensuite à l'approximation lambda × H. On vérifie enfin ce qui compte pour l'agent, la qualité de ses décisions.</p>
+</header>
+
+<div class="eq" aria-label="Équations">
+  <span><b>Bellman</b>  V(b) = min( M × P(erreur | b) ; min sur c de [ coût(c) + E V(b') ] )</span>
+  <span><b>Approximation</b>  V(b) ≈ λ × H(b)</span>
+  <span><b>Règle</b>  S(c) = coût(c) − λ × E[bits gagnés par c] ; on lance la vérification de plus petit S tant que S &lt; 0</span>
+</div>
+
+<section class="panel" id="p1">
+  <div class="kicker">1 · Bellman exact</div>
+  <h2>Un cas où l'approximation est exacte</h2>
+  <p>k causes équiprobables, des questions oui-non parfaites qui coupent l'ensemble comme on veut, chacune au même coût. V est calculée exactement par programmation dynamique, pour k de 1 à 8.</p>
+  <div class="controls">
+    <div class="ctl"><label for="c1">coût d'une question <output id="c1o"></output></label><input id="c1" type="range" min="1" max="10" step="1" value="5"></div>
+    <div class="ctl"><label for="m1">prix de l'erreur M <output id="m1o"></output></label><input id="m1" type="range" min="2" max="120" step="1" value="60"></div>
+    <div class="ctl"><label for="l1">λ <output id="l1o"></output></label><input id="l1" type="range" min="0" max="20" step="0.5" value="5"></div>
+  </div>
+  <svg id="s1" viewBox="0 0 640 300" role="img" aria-label="V exacte contre H, cas simple"></svg>
+  <div class="legend"><span><i style="background:var(--accent)"></i>V exacte (Bellman)</span><span><i style="background:var(--brass)"></i>λ × H</span></div>
+  <div class="readout" id="r1"></div>
+</section>
+
+<section class="panel" id="p2">
+  <div class="kicker">2 · L'approximation sur Kafka</div>
+  <h2>Sur la table Kafka, V s'écarte de la droite</h2>
+  <p>Chaque point est une croyance que l'agent peut atteindre avec la table comptée sur l'étude 1 (sept vérifications, lecture binaire). La droite pointillée est la meilleure droite V = a × H passant par l'origine. La droite pleine est λ × H, que vous déplacez.</p>
+  <div class="controls">
+    <div class="ctl" style="flex:0 1 auto"><label>prix de l'erreur M</label><div class="seg" id="m2"></div></div>
+    <div class="ctl"><label for="l2">λ <output id="l2o"></output></label><input id="l2" type="range" min="0" max="60" step="0.5" value="12"></div>
+  </div>
+  <svg id="s2" viewBox="0 0 640 320" role="img" aria-label="Nuage V contre H sur la table Kafka"></svg>
+  <div class="legend"><span><i style="background:var(--accent);opacity:.6"></i>croyances atteignables</span><span><i style="background:var(--brass)"></i>meilleure droite a × H</span><span><i style="background:var(--fg)"></i>λ × H</span></div>
+  <div class="readout" id="r2"></div>
+</section>
+
+<section class="panel" id="p3">
+  <div class="kicker">3 · Le seuil de chaque vérification</div>
+  <h2>Où chaque vérification devient rentable</h2>
+  <p>Au départ de l'enquête, chaque vérification a un coût et apprend un nombre de bits attendu. Son S descend en ligne droite quand λ monte, et passe sous zéro à λ = coût / bits. Entre deux seuils, la règle prend les mêmes décisions, ce qui explique les plateaux du panneau 4.</p>
+  <div class="controls">
+    <div class="ctl"><label for="l3">λ <output id="l3o"></output></label><input id="l3" type="range" min="0" max="20" step="0.25" value="12"></div>
+  </div>
+  <svg id="s3" viewBox="0 0 640 320" role="img" aria-label="S de chaque vérification en fonction de lambda"></svg>
+  <div class="readout" id="r3"></div>
+</section>
+
+<section class="panel" id="p4">
+  <div class="kicker">4 · La décision</div>
+  <h2>Ce qui compte pour l'agent, la perte</h2>
+  <p>Sur les 120 pannes de l'étude 2 (lecteur aiguillé, dix tables), la perte moyenne de la règle pour chaque λ, face à l'optimum exact calculé avec la même table. Les décisions de la règle ne dépendent pas de M. M ne fait que compter le prix des erreurs.</p>
+  <div class="controls">
+    <div class="ctl" style="flex:0 1 auto"><label>prix de l'erreur M</label><div class="seg" id="m4"></div></div>
+  </div>
+  <svg id="s4" viewBox="0 0 640 320" role="img" aria-label="Perte de la règle en fonction de lambda"></svg>
+  <div class="legend"><span><i style="background:var(--accent)"></i>règle S, perte moyenne</span><span><i style="background:var(--ok)"></i>optimum exact selon la table</span><span><i style="background:var(--bad)"></i>nommer tout de suite (M × 5/6)</span></div>
+  <div class="readout" id="r4"></div>
+  <p class="note">L'optimum est optimal selon la table, qui est plus incertaine que les pannes réelles. Quand M dépasse 60, il vérifie davantage que nécessaire sur ces pannes nettes, et la règle à λ = 12 fait alors mieux que lui.</p>
+</section>
+
+<footer>Données : 120 pannes de l'étude 2 et table comptée sur l'étude 1. Calcul : kafka/viz_export.py, sortie kafka/results/viz-export.json. Rien n'est relancé. Résultats exploratoires, non pré-inscrits. Marc Verchiani, 2026.</footer>
+</div>
+
+<script>
+const D = __DATA__;
+const NS = "http://www.w3.org/2000/svg";
+const FR = {rebalance_logs:"journaux de rebalancing",consumer_cpu_profile:"profil CPU",partition_lag_spread:"répartition du lag",
+  broker_quota_metrics:"quotas du broker",jvm_gc_logs:"journaux GC",producer_rate_graph:"débit du producteur",restart_consumer:"redémarrage"};
+const fmt = (x,d=2)=>x.toLocaleString("fr-FR",{minimumFractionDigits:d,maximumFractionDigits:d});
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+function frame(svg,o){
+  svg.innerHTML="";const W=640,H=+svg.getAttribute("viewBox").split(" ")[3];
+  const L=52,R=16,T=12,B=40;
+  const sx=x=>L+(x-o.x0)/(o.x1-o.x0)*(W-L-R), sy=y=>H-B-(y-o.y0)/(o.y1-o.y0)*(H-T-B);
+  const g=el("g",{},svg);
+  for(const t of o.xt){el("line",{x1:sx(t),x2:sx(t),y1:T,y2:H-B,stroke:"var(--grid)","stroke-width":1},g);
+    const tx=el("text",{x:sx(t),y:H-B+16,"text-anchor":"middle"},g);tx.textContent=o.xf?o.xf(t):t}
+  for(const t of o.yt){el("line",{x1:L,x2:W-R,y1:sy(t),y2:sy(t),stroke:"var(--grid)","stroke-width":1},g);
+    const ty=el("text",{x:L-6,y:sy(t)+4,"text-anchor":"end"},g);ty.textContent=t}
+  el("line",{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:"var(--line)"},g);el("line",{x1:L,x2:L,y1:T,y2:H-B,stroke:"var(--line)"},g);
+  const xl=el("text",{x:(L+W-R)/2,y:H-6,"text-anchor":"middle"},g);xl.textContent=o.xl;
+  const yl=el("text",{x:12,y:(T+H-B)/2,"text-anchor":"middle",transform:`rotate(-90 12 ${(T+H-B)/2})`},g);yl.textContent=o.yl;
+  return {sx,sy,g,clip:(y)=>Math.max(o.y0,Math.min(o.y1,y))};
+}
+function ticks(a,b,n){const step=Math.pow(10,Math.floor(Math.log10((b-a)/n)));const m=[1,2,5,10].find(k=>(b-a)/(step*k)<=n)*step;const out=[];for(let t=Math.ceil(a/m)*m;t<=b+1e-9;t+=m)out.push(+t.toFixed(6));return out}
+function bindRange(id){const i=document.getElementById(id),o=document.getElementById(id+"o");const f=()=>{o.textContent=i.value};f();return i}
+function seg(id,values,initial,onpick){const box=document.getElementById(id);let cur=initial;
+  for(const v of values){const b=document.createElement("button");b.type="button";b.textContent=v;b.setAttribute("aria-pressed",v==cur);
+    b.onclick=()=>{cur=v;[...box.children].forEach(x=>x.setAttribute("aria-pressed",x.textContent==String(v)));onpick(v)};box.appendChild(b)}
+  return ()=>cur}
+
+/* 1 · exact Bellman on the toy case */
+const c1=bindRange("c1"),m1=bindRange("m1"),l1=bindRange("l1");
+function toy(c,M){const V=[0,0];for(let k=2;k<=8;k++){let best=M*(k-1)/k;for(let a=1;a<k;a++)best=Math.min(best,c+(a/k)*V[a]+((k-a)/k)*V[k-a]);V.push(best)}return V}
+function draw1(){
+  const c=+c1.value,M=+m1.value,lam=+l1.value;["c1","m1","l1"].forEach(i=>document.getElementById(i+"o").textContent=document.getElementById(i).value);
+  const V=toy(c,M),ymax=Math.max(10,Math.ceil(Math.max(...V.slice(1),lam*3)/5)*5);
+  const f=frame(document.getElementById("s1"),{x0:0,x1:3.1,y0:0,y1:ymax,xt:[0,1,2,3],yt:ticks(0,ymax,5),xl:"H, bits restants (log₂ k)",yl:"minutes"});
+  el("line",{x1:f.sx(0),y1:f.sy(0),x2:f.sx(3.1),y2:f.sy(f.clip(lam*3.1)),stroke:"var(--brass)","stroke-width":2},f.g);
+  const pts=[];for(let k=1;k<=8;k++)pts.push([Math.log2(k),V[k],k]);
+  el("polyline",{points:pts.map(p=>f.sx(p[0])+","+f.sy(p[1])).join(" "),fill:"none",stroke:"var(--accent)","stroke-width":1.2,"stroke-dasharray":"3 3"},f.g);
+  for(const [h,v,k] of pts){el("circle",{cx:f.sx(h),cy:f.sy(v),r:4.5,fill:"var(--accent)"},f.g);
+    const t=el("text",{x:f.sx(h)+7,y:f.sy(v)-7},f.g);t.textContent="k="+k}
+  const stop4=M*3/4,S=c-lam*1;
+  document.getElementById("r1").innerHTML=
+    `À k = 4 : s'arrêter coûte <strong>${fmt(stop4)}</strong> min, continuer coûte V = <strong>${fmt(V[4])}</strong> min. `+
+    `Une question d'un bit a S = ${c} − ${lam} × 1 = <strong>${fmt(S)}</strong>, donc la règle ${S<0?"continue":(S===0?"hésite":"s'arrête")}`+
+    `${S>=0&&stop4>V[4]?", alors que continuer coûte moins.":"."}<br>V(8) = ${fmt(V[8])} et λ × H(8) = ${fmt(lam*3)}.`;
+}
+[c1,m1,l1].forEach(i=>i.addEventListener("input",draw1));draw1();
+
+/* 2 · the Kafka cloud */
+const l2=bindRange("l2");
+const getM2=seg("m2",Object.keys(D.cloud).map(Number),60,draw2);
+function draw2(){
+  document.getElementById("l2o").textContent=l2.value;
+  const M=getM2(),C=D.cloud[M],lam=+l2.value;const ymax=Math.ceil(Math.max(...C.points.map(p=>p[1]))/10)*10;
+  const f=frame(document.getElementById("s2"),{x0:0,x1:2.7,y0:0,y1:ymax,xt:[0,0.5,1,1.5,2,2.5],xf:t=>String(t).replace(".",","),yt:ticks(0,ymax,6),xl:"H, entropie de la croyance (bits)",yl:"V exacte (minutes)"});
+  const g=el("g",{fill:"var(--accent)","fill-opacity":0.35},f.g);
+  for(const [h,v] of C.points)el("circle",{cx:f.sx(h),cy:f.sy(v),r:2},g);
+  el("line",{x1:f.sx(0),y1:f.sy(0),x2:f.sx(2.7),y2:f.sy(f.clip(C.a*2.7)),stroke:"var(--brass)","stroke-width":2,"stroke-dasharray":"6 4"},f.g);
+  el("line",{x1:f.sx(0),y1:f.sy(0),x2:f.sx(Math.min(2.7,ymax/Math.max(lam,1e-9))),y2:f.sy(f.clip(lam*Math.min(2.7,ymax/Math.max(lam,1e-9)))),stroke:"var(--fg)","stroke-width":1.6},f.g);
+  document.getElementById("r2").innerHTML=`M = ${M} : meilleure pente a = <strong>${fmt(C.a)}</strong> min/bit, R² = <strong>${fmt(C.r2)}</strong>, M / a = ${fmt(M/C.a,1)}. `+
+    `${C.points.length} croyances distinctes. La pente suit M, et le nuage s'écarte de la droite quand M monte.`;
+}
+l2.addEventListener("input",draw2);draw2();
+
+/* 3 · S of each check against lambda, at the uniform prior */
+const l3=bindRange("l3");
+function draw3(){
+  document.getElementById("l3o").textContent=l3.value;const lam=+l3.value;
+  const f=frame(document.getElementById("s3"),{x0:0,x1:20,y0:-8,y1:9,xt:[0,4,8,12,16,20],yt:[-8,-4,0,4,8],xl:"λ (minutes par bit)",yl:"S au départ (minutes)"});
+  el("line",{x1:f.sx(0),x2:f.sx(20),y1:f.sy(0),y2:f.sy(0),stroke:"var(--fg)","stroke-width":1},f.g);
+  el("line",{x1:f.sx(lam),x2:f.sx(lam),y1:f.sy(9),y2:f.sy(-8),stroke:"var(--brass)","stroke-width":1.5,"stroke-dasharray":"4 3"},f.g);
+  const rows=[];
+  D.checks.forEach((c,i)=>{
+    const S=l=>c.cost-l*c.bits, th=c.cost/c.bits, run=S(lam)<0;
+    const x2=20,y2=S(x2);let xe=x2,ye=y2;if(y2<-8){xe=(c.cost+8)/c.bits;ye=-8}
+    el("line",{x1:f.sx(0),y1:f.sy(Math.min(9,c.cost)),x2:f.sx(xe),y2:f.sy(ye),stroke:run?"var(--accent)":"var(--muted)","stroke-width":run?2:1.2,"stroke-opacity":run?1:.7},f.g);
+    if(th<=20){el("circle",{cx:f.sx(th),cy:f.sy(0),r:3.5,fill:run?"var(--accent)":"var(--muted)"},f.g)}
+    rows.push({name:FR[c.check],cost:c.cost,bits:c.bits,th,run,S:S(lam)});
+  });
+  rows.sort((a,b)=>a.th-b.th);
+  document.getElementById("r3").innerHTML=rows.map(r=>`${r.run?"<strong>":""}${r.name}${r.run?"</strong>":""} · coût ${r.cost} · ${fmt(r.bits,3)} bit · seuil λ = ${r.th>100?fmt(r.th,0):fmt(r.th,1)} · S = ${fmt(r.S,2)}`).join("<br>")+
+    `<br>À λ = ${lam}, ${rows.filter(r=>r.run).length} vérification(s) sur 7 ont S &lt; 0 au départ. La règle lance celle de plus petit S, puis recalcule.`;
+}
+l3.addEventListener("input",draw3);draw3();
+
+/* 4 · the loss against lambda */
+const getM4=seg("m4",Object.keys(D.optimum).map(Number),60,draw4);
+function draw4(){
+  const M=getM4(),opt=D.optimum[M],guess=M*5/6;
+  const L=D.curve.map(c=>[c.lam,c.minutes+M*c.wrong]);
+  const ymax=Math.ceil(Math.max(20,Math.min(60,Math.max(...L.map(p=>p[1]),guess)))/5)*5;
+  const f=frame(document.getElementById("s4"),{x0:0,x1:30,y0:0,y1:ymax,xt:[1,6,12,18,24,30],yt:ticks(0,ymax,6),xl:"λ (minutes par bit)",yl:"perte moyenne (minutes)"});
+  el("rect",{x:f.sx(6),y:f.sy(ymax),width:f.sx(14)-f.sx(6),height:f.sy(0)-f.sy(ymax),fill:"var(--accent)","fill-opacity":0.07},f.g);
+  if(guess<=ymax)el("line",{x1:f.sx(0),x2:f.sx(30),y1:f.sy(guess),y2:f.sy(guess),stroke:"var(--bad)","stroke-width":1.4,"stroke-dasharray":"6 4"},f.g);
+  el("line",{x1:f.sx(0),x2:f.sx(30),y1:f.sy(opt),y2:f.sy(opt),stroke:"var(--ok)","stroke-width":2},f.g);
+  el("polyline",{points:L.map(p=>f.sx(p[0])+","+f.sy(f.clip(p[1]))).join(" "),fill:"none",stroke:"var(--accent)","stroke-width":2.2},f.g);
+  for(const p of L)el("circle",{cx:f.sx(p[0]),cy:f.sy(f.clip(p[1])),r:p[0]===12?4.5:2.2,fill:p[0]===12?"var(--brass)":"var(--accent)"},f.g);
+  const at=l=>L.find(p=>p[0]===l)[1], best=Math.min(...L.map(p=>p[1]));
+  const a=D.cloud[M]?D.cloud[M].a:null;
+  document.getElementById("r4").innerHTML=`M = ${M} : optimum <strong>${fmt(opt)}</strong> · règle à λ = 12 <strong>${fmt(at(12))}</strong> · meilleure λ de la grille ${fmt(best)} · nommer tout de suite ${fmt(guess)}`+
+    (a?`<br>La pente qui approche le mieux V est a = ${fmt(a)}. Arrondie à ${Math.round(a)}, elle donne ${fmt(at(Math.min(30,Math.max(1,Math.round(a)))))}.`:"")+
+    `<br>La bande claire marque le plateau λ = 6 à 14 mesuré sur l'étude 2.`;
+}
+draw4();
+</script>

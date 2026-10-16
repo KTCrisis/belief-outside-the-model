@@ -1,0 +1,200 @@
+{"rumor": 0, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 1, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 2, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 3, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 4, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 5, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 6, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 7, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 8, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 9, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 10, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 11, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 12, "truth": true, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": false, "loss": 44.0}
+{"rumor": 13, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 14, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 15, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 16, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 17, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 18, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 19, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 20, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 21, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 22, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 23, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 24, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 25, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 26, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 27, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 28, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 29, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 30, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 31, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 32, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 33, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 34, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 35, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.0, "right": false, "loss": 46.0}
+{"rumor": 36, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 37, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 38, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 39, "truth": true, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": false, "loss": 44.0}
+{"rumor": 40, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 41, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 42, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": false, "loss": 42.0}
+{"rumor": 43, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 44, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 45, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 46, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 47, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": false, "loss": 42.0}
+{"rumor": 48, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 49, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 50, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 51, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 52, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 53, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 54, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 55, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 56, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 57, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 58, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 59, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 60, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 61, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 62, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 63, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 64, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 65, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 66, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 67, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 68, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 69, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 70, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 71, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 72, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 73, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 74, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 75, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 76, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 77, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 78, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 79, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 80, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 81, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 82, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 83, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 84, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 85, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 86, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 87, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 88, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 89, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 90, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 91, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 92, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 93, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 94, "truth": true, "retracts": true, "agent": "hybrid_prov_jev", "answer": true, "minutes": 10.0, "path": ["article_b", "article_c", "(retraction)", "official_statement"], "dollars": 0.0, "right": true, "loss": 10.0}
+{"rumor": 95, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 96, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 97, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 98, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 99, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 100, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 101, "truth": true, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": false, "loss": 44.0}
+{"rumor": 102, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": false, "loss": 42.0}
+{"rumor": 103, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 104, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 105, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 106, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 107, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 108, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 109, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 110, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 111, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 112, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 113, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 114, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 115, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 116, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": false, "loss": 42.0}
+{"rumor": 117, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 118, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 119, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 120, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 121, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 122, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 123, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 124, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 125, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 126, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 127, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 128, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 129, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 130, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 131, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 132, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.0, "right": false, "loss": 46.0}
+{"rumor": 133, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 134, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 135, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 136, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 137, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 138, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 139, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 140, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 141, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 142, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 143, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 144, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 145, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 146, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 147, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 148, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 149, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 10.0, "path": ["article_b", "(retraction)", "article_c", "official_statement"], "dollars": 0.0, "right": true, "loss": 10.0}
+{"rumor": 150, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": false, "loss": 42.0}
+{"rumor": 151, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 152, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 153, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 154, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 155, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 156, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 157, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 4.0, "path": ["article_b", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 158, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 159, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 160, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 161, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 162, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 163, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 164, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 165, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 166, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 167, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 168, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 169, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 170, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": false, "loss": 52.0}
+{"rumor": 171, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 172, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 173, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 174, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 175, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 176, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 177, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 178, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 6.0, "path": ["article_b", "article_c", "article_a"], "dollars": 0.0, "right": true, "loss": 6.0}
+{"rumor": 179, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 180, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 181, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 182, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 183, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 184, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 185, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 186, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": false, "loss": 42.0}
+{"rumor": 187, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 188, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 189, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 190, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 191, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 192, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": true, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": true, "loss": 12.0}
+{"rumor": 193, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 194, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 195, "truth": true, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 12.0, "path": ["article_b", "article_c", "article_a", "official_statement"], "dollars": 0.0, "right": false, "loss": 52.0}
+{"rumor": 196, "truth": false, "retracts": true, "agent": "hybrid_prov_jev", "answer": false, "minutes": 4.0, "path": ["article_b", "(retraction)", "article_c"], "dollars": 0.0, "right": true, "loss": 4.0}
+{"rumor": 197, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 198, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}
+{"rumor": 199, "truth": false, "retracts": false, "agent": "hybrid_prov_jev", "answer": false, "minutes": 2.0, "path": ["article_b"], "dollars": 0.0, "right": true, "loss": 2.0}

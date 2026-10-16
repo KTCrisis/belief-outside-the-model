@@ -1,0 +1,26 @@
+
+== kafka: exact expected loss, 10 histories of 120 incidents (truth 22.02)
+policy                                     loss    max  minutes  accuracy
+tree depth 1                              36.86  44.00     2.60     0.429
+tree depth 2                              36.31  42.29     6.89     0.510
+tree depth 3                              34.24  42.74    10.64     0.607
+tree depth 4                              33.49  36.44    12.93     0.657
+tree depth 5                              32.64  37.48    14.23     0.693
+tree depth free                           33.10  39.71    15.36     0.704
+hybrid, mem7 table alone                  28.09  33.50     4.75     0.611
+hybrid, LLM table + mem7 (k empirical)    22.90  25.26     7.67     0.746
+
+== internet: exact expected loss, 10 histories of 120 incidents (truth 15.30)
+policy                                     loss    max  minutes  accuracy
+tree depth 1                              30.84  32.90     5.40     0.435
+tree depth 2                              29.41  34.15     8.86     0.543
+tree depth 3                              29.63  32.96    12.11     0.611
+tree depth 4                              32.37  37.76    14.79     0.609
+tree depth 5                              32.22  38.17    16.28     0.646
+tree depth free                           33.06  37.47    18.28     0.671
+hybrid, mem7 table alone                  19.20  21.12     5.89     0.704
+hybrid, LLM table + mem7 (k empirical)    16.83  19.50     8.60     0.817
+
+-- complete histories (every check run in every past incident), 120 incidents
+kafka {'tree depth 2': 33.56, 'tree depth 3': 33.41, 'tree depth 4': 32.11, 'tree depth free': 30.25, 'hybrid, mem7 table alone': 24.67}
+internet {'tree depth 2': 27.59, 'tree depth 3': 27.25, 'tree depth 4': 26.17, 'tree depth free': 26.78, 'hybrid, mem7 table alone': 16.41}

@@ -1,0 +1,3 @@
+clinic  M=200  states=729  optimum V0=75.91
+  all states     V ~ a*H: a=46.88 min/bit (M/a=4.27) R2=0.698 | V ~ b*M*risk: b=0.82 R2=0.807
+  3+ tests left  V ~ a*H: a=40.48 min/bit (M/a=4.94) R2=0.731 | V ~ b*M*risk: b=0.72 R2=0.690

@@ -1,0 +1,43 @@
+== 1. Appendix C: loss of the rule against lambda, M = 60
+   study 1: reference reader, two folds (as lambda_fit.py); study 2: routed reader, tables of study 1
+   lambda  study 1 checks  study 2 checks
+        1    50.00   0.00    50.00   0.00
+        2    50.00   0.00    50.00   0.00
+        3    50.00   0.00    50.00   0.00
+        4    33.67   1.83    33.67   1.83
+        5    17.67   3.00    17.67   3.00
+        6     9.33   3.33     9.33   3.33
+        8     9.33   3.33     9.33   3.33
+       10     9.33   3.33     9.33   3.33
+       12     9.33   3.33     9.33   3.33
+       14     9.33   3.33     9.33   3.33
+       15     9.33   3.33    10.53   3.61
+       16     9.33   3.33    11.00   3.67
+       18     9.33   3.33    11.00   3.67
+       20     9.33   3.33    11.00   3.67
+       24     9.33   3.33    12.11   4.01
+       30     9.45   3.38    15.99   4.63
+       36     9.88   3.53    19.99   4.67
+       48    13.69   3.73    20.25   4.65
+
+== 2. Appendix D: dollars per diagnosis, study 2, 120 faults
+   routed_h55 rows with a cost: 480 (episode, check) pairs, 0 disagreeing copies
+   routed, Haiku 4.5 extraction: mean 0.00355 $ (max 0.00479), with Jev bound < 0.00367 $
+   routed, Haiku 5.5 extraction: mean 0.00044 $ (max 0.00058), with Jev bound < 0.00056 $
+   Sonnet 5.5 alone   mean 0.02262 $   loss 8.63
+   Haiku 5.5 alone    mean 0.00132 $   loss 12.49
+   Haiku 4.5 alone    mean 0.01213 $   loss 17.08
+   extraction Haiku 4.5 / Haiku 5.5: 8.0x  (bounds with Jev: 6.5x)
+   Haiku 5.5 alone / routed Haiku 5.5: 2.4x with the Jev bound, 3.0x without
+   Sonnet alone / routed Haiku 5.5: 40x with the Jev bound, 51x without
+
+== 3. Companion note (simulated bench, exact expectations)
+   results-exact.txt            miss 60.0 min, lam 12.0 min/bit, threshold 0.9: least_action 22.02 vs optimum 21.49  gap +2.5%
+   results-internet-exact.txt   scenario internet: miss 45.0 min, lam 12.0 min/bit, threshold 0.9: least_action 15.30 vs optimum 15.26  gap +0.3%
+   results-clinic-exact.txt     scenario clinic: miss 200.0 min, lam 50.0 min/bit, threshold 0.9: least_action 76.51 vs optimum 75.91  gap +0.8%
+   results-m-sweep.txt, lambda = M/4 (least_action), gap to the optimum at each M:
+     kafka     M = 15 (0.25x): 0.0%, M = 30 (0.5x): 5.1%, M = 60 (1x): 3.0%, M = 120 (2x): 13.8%, M = 240 (4x): 11.8%
+     internet  M = 11.2 (0.25x): 3.7%, M = 22.5 (0.5x): 11.1%, M = 45 (1x): 1.4%, M = 90 (2x): 9.9%, M = 180 (4x): 23.2%
+     clinic    M = 50 (0.25x): 0.4%, M = 100 (0.5x): 2.9%, M = 200 (1x): 0.8%, M = 400 (2x): 3.8%, M = 800 (4x): 4.9%
+   tables-summary.txt kafka   : true table 22.02; worst LLM median-of-5 table 25.57 (+16% vs true table, +16% vs best median 22.11); worst single draw 29.80 (+35%)
+   tables-summary.txt internet: true table 15.30; worst LLM median-of-5 table 27.32 (+79% vs true table, +64% vs best median 16.61); worst single draw 36.30 (+137%)

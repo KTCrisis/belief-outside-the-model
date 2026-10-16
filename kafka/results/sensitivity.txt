@@ -1,0 +1,54 @@
+
+== lambda = M/5
+-- M = 15, lambda = 3
+  H1 mixed vs LLM table     12.50 vs  12.50  diff  +0.00 [+0.00, +0.00] not separated
+  H2 priced vs HESP stop    12.50 vs  17.48  diff  -4.97 [-6.74, -3.30] holds
+  H4 routed vs Jev          12.50 vs  12.50  diff  +0.00 [+0.00, +0.00] not separated
+  H5 routed vs Sonnet (margin 2)  12.50 vs   8.63  diff  +3.87 [+2.71, +5.05] fails
+-- M = 30, lambda = 6
+  H1 mixed vs LLM table     16.43 vs  22.80  diff  -6.36 [-8.71, -4.01] holds
+  H2 priced vs HESP stop    15.79 vs  19.35  diff  -3.56 [-4.47, -2.58] holds
+  H4 routed vs Jev           9.33 vs  17.17  diff  -7.84 [-10.51, -5.35] holds
+  H5 routed vs Sonnet (margin 2)   9.33 vs   8.63  diff  +0.70 [+0.39, +1.03] holds
+-- M = 60, lambda = 12
+  H1 mixed vs LLM table     19.11 vs  24.80  diff  -5.69 [-8.28, -3.29] holds
+  H2 priced vs HESP stop    19.73 vs  23.10  diff  -3.37 [-4.08, -2.67] holds
+  H4 routed vs Jev           9.33 vs  18.68  diff  -9.35 [-13.80, -5.40] holds
+  H5 routed vs Sonnet (margin 2)   9.33 vs   8.63  diff  +0.70 [+0.40, +1.04] holds
+-- M = 120, lambda = 24
+  H1 mixed vs LLM table     34.06 vs  38.33  diff  -4.26 [-10.49, +1.53] not separated
+  H2 priced vs HESP stop    32.73 vs  30.60  diff  +2.13 [+1.42, +2.85] reversed
+  H4 routed vs Jev          12.11 vs  31.09  diff -18.98 [-27.05, -11.79] holds
+  H5 routed vs Sonnet (margin 2)  12.11 vs   8.63  diff  +3.47 [+2.98, +3.98] fails
+-- M = 240, lambda = 48
+  H1 mixed vs LLM table     56.95 vs  64.80  diff  -7.85 [-19.79, +3.64] not separated
+  H2 priced vs HESP stop    52.67 vs  45.60  diff  +7.07 [+5.96, +8.20] reversed
+  H4 routed vs Jev          20.25 vs  50.12  diff -29.87 [-44.68, -16.83] holds
+  H5 routed vs Sonnet (margin 2)  20.25 vs   8.63  diff +11.62 [+10.72, +12.53] fails
+
+== lambda = 12
+-- M = 15, lambda = 12
+  H1 mixed vs LLM table     13.60 vs  15.20  diff  -1.60 [-2.36, -0.86] holds
+  H2 priced vs HESP stop    14.11 vs  17.48  diff  -3.37 [-4.07, -2.69] holds
+  H4 routed vs Jev           9.33 vs  13.43  diff  -4.10 [-5.82, -2.51] holds
+  H5 routed vs Sonnet (margin 2)   9.33 vs   8.63  diff  +0.70 [+0.39, +1.03] holds
+-- M = 30, lambda = 12
+  H1 mixed vs LLM table     15.44 vs  18.40  diff  -2.96 [-4.23, -1.72] holds
+  H2 priced vs HESP stop    15.98 vs  19.35  diff  -3.37 [-4.08, -2.65] holds
+  H4 routed vs Jev           9.33 vs  15.18  diff  -5.85 [-8.44, -3.45] holds
+  H5 routed vs Sonnet (margin 2)   9.33 vs   8.63  diff  +0.70 [+0.39, +1.05] holds
+-- M = 60, lambda = 12
+  H1 mixed vs LLM table     19.11 vs  24.80  diff  -5.69 [-8.30, -3.27] holds
+  H2 priced vs HESP stop    19.73 vs  23.10  diff  -3.37 [-4.08, -2.65] holds
+  H4 routed vs Jev           9.33 vs  18.68  diff  -9.35 [-13.90, -5.39] holds
+  H5 routed vs Sonnet (margin 2)   9.33 vs   8.63  diff  +0.70 [+0.39, +1.03] holds
+-- M = 120, lambda = 12
+  H1 mixed vs LLM table     26.46 vs  37.60  diff -11.14 [-16.38, -6.09] holds
+  H2 priced vs HESP stop    27.23 vs  30.60  diff  -3.37 [-4.08, -2.67] holds
+  H4 routed vs Jev           9.33 vs  25.68  diff -16.35 [-24.41, -8.96] holds
+  H5 routed vs Sonnet (margin 2)   9.33 vs   8.63  diff  +0.70 [+0.39, +1.03] holds
+-- M = 240, lambda = 12
+  H1 mixed vs LLM table     41.16 vs  63.20  diff -22.04 [-32.60, -11.99] holds
+  H2 priced vs HESP stop    42.23 vs  45.60  diff  -3.37 [-4.08, -2.67] holds
+  H4 routed vs Jev           9.33 vs  39.68  diff -30.35 [-45.58, -17.29] holds
+  H5 routed vs Sonnet (margin 2)   9.33 vs   8.63  diff  +0.70 [+0.39, +1.04] holds

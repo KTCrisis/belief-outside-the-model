@@ -1,0 +1,45 @@
+== main: exploratory, 95% paired bootstrap intervals
+
+1. Fold by fold, and the healthy-lag drift inside fold B
+  all                        n=120  healthy lag median    225
+      H1 mixed - LLM        -5.69 [ -8.26,  -3.26]
+      H2 priced - HESP      -3.37 [ -4.09,  -2.67]
+      H3 hybrid - Sonnet   +10.55 [ +6.70, +14.72]
+      hybrid, reference      9.33   Sonnet   8.56
+  fold A                     n= 60  healthy lag median    158
+      H1 mixed - LLM        -7.14 [-11.40,  -3.19]
+      H2 priced - HESP      -3.50 [ -4.52,  -2.52]
+      H3 hybrid - Sonnet   +12.05 [ +6.17, +18.75]
+      hybrid, reference      9.33   Sonnet   8.62
+  fold B                     n= 60  healthy lag median    677
+      H1 mixed - LLM        -4.24 [ -7.12,  -1.57]
+      H2 priced - HESP      -3.23 [ -4.25,  -2.25]
+      H3 hybrid - Sonnet    +9.05 [ +4.34, +14.56]
+      hybrid, reference      9.33   Sonnet   8.50
+  fold B, outside the drift  n= 11  healthy lag median    185
+      H1 mixed - LLM        -4.69 [-15.04,  +2.78]
+      H2 priced - HESP      -4.91 [ -7.18,  -2.55]
+      H3 hybrid - Sonnet   +20.27 [ +2.73, +39.55]
+      hybrid, reference      8.36   Sonnet   7.00
+  fold B, during the drift   n= 49  healthy lag median    698
+      H1 mixed - LLM        -4.13 [ -6.93,  -1.35]
+      H2 priced - HESP      -2.86 [ -3.98,  -1.80]
+      H3 hybrid - Sonnet    +6.53 [ +2.52, +11.67]
+      hybrid, reference      9.55   Sonnet   8.84
+  per cause, during the drift: rebalancing 8, slow_consumer 8, partition_skew 7, broker_throttling 9, gc_pauses 9, upstream_burst 8
+
+2. Empirical k below the grid floor
+  fold A (tables counted on the other fold): 42/42 cells pure (all 0 or all 1); mixed cells: none
+      k* on an extended grid: median 0.01 (min 0.01, max 0.01)
+      mean log-likelihood at k = 0.01, 0.1, 1, 10: -9.8, -11.5, -23.8, -61.2
+  fold B (tables counted on the other fold): 41/42 cells pure (all 0 or all 1); mixed cells: consumer_cpu_profile|rebalancing 1/10
+      k* on an extended grid: median 0.05 (min 0.05, max 0.05)
+      mean log-likelihood at k = 0.01, 0.1, 1, 10: -18.5, -17.9, -28.0, -63.6
+  H1 loss (voi, Jev reader) with k fixed, mixed table vs LLM table 24.80:
+      k =  0.01: jev  19.20   reference   9.33
+      k =   0.1: jev  19.20   reference   9.33
+      k =   0.5: jev  19.27   reference   9.33
+      k =     1: jev  19.11   reference   9.33
+      k =     3: jev  19.00   reference   9.40
+      k =    10: jev  19.08   reference   9.67
+      k =    30: jev  19.22   reference   9.82

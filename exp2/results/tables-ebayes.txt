@@ -1,0 +1,14 @@
+
+== kafka: k estimated per history and table (100 pairs)
+k chosen: median 13.0 (p10 7.6, p90 44.8)
+empirical Bayes k   22.90  p90  24.60  max  25.26
+fixed k = 10        22.95  p90  24.60  max  25.46
+LLM table alone     23.27  p90  24.66  max  25.57
+k vs table quality: corr(k, LLM-alone loss) = -0.13
+
+== internet: k estimated per history and table (100 pairs)
+k chosen: median 3.2 (p10 1.8, p90 5.8)
+empirical Bayes k   16.83  p90  19.04  max  19.50
+fixed k = 10        16.94  p90  18.98  max  22.10
+LLM table alone     19.91  p90  23.28  max  27.32
+k vs table quality: corr(k, LLM-alone loss) = -0.57

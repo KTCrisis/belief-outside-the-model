@@ -1,0 +1,42 @@
+{"episode": 0, "cause": "gc_pauses", "check": "rebalance_logs", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "broker_quota_metrics", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "jvm_gc_logs", "reference": 1, "routed": 0.92, "routed_failed": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "rebalance_logs", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "producer_rate_graph", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.001437}
+{"episode": 1, "cause": "slow_consumer", "check": "broker_quota_metrics", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "jvm_gc_logs", "reference": 0, "routed": 0.08, "routed_failed": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "producer_rate_graph", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.001437}
+{"episode": 0, "cause": "gc_pauses", "check": "restart_consumer", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0013440000000000001}
+{"episode": 2, "cause": "broker_throttling", "check": "rebalance_logs", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "partition_lag_spread", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.003078}
+{"episode": 0, "cause": "gc_pauses", "check": "consumer_cpu_profile", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.004502}
+{"episode": 2, "cause": "broker_throttling", "check": "broker_quota_metrics", "reference": 1, "routed": 0.97, "routed_failed": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "jvm_gc_logs", "reference": 0, "routed": 0.07, "routed_failed": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "restart_consumer", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0013440000000000001}
+{"episode": 1, "cause": "slow_consumer", "check": "partition_lag_spread", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.003168}
+{"episode": 3, "cause": "upstream_burst", "check": "rebalance_logs", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "producer_rate_graph", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.001437}
+{"episode": 2, "cause": "broker_throttling", "check": "partition_lag_spread", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.003372}
+{"episode": 3, "cause": "upstream_burst", "check": "broker_quota_metrics", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 3, "cause": "upstream_burst", "check": "jvm_gc_logs", "reference": 0, "routed": 0.08, "routed_failed": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "restart_consumer", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0013440000000000001}
+{"episode": 3, "cause": "upstream_burst", "check": "partition_lag_spread", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.003126}
+{"episode": 4, "cause": "partition_skew", "check": "rebalance_logs", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 3, "cause": "upstream_burst", "check": "producer_rate_graph", "reference": 0, "routed": 0.98, "routed_failed": 0, "routed_usd": 0.001437}
+{"episode": 1, "cause": "slow_consumer", "check": "consumer_cpu_profile", "reference": 0, "routed": 0.98, "routed_failed": 0, "routed_usd": 0.00443}
+{"episode": 4, "cause": "partition_skew", "check": "broker_quota_metrics", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 4, "cause": "partition_skew", "check": "jvm_gc_logs", "reference": 0, "routed": 0.07, "routed_failed": 0}
+{"episode": 4, "cause": "partition_skew", "check": "producer_rate_graph", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0014219999999999999}
+{"episode": 2, "cause": "broker_throttling", "check": "consumer_cpu_profile", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.006008}
+{"episode": 5, "cause": "rebalancing", "check": "rebalance_logs", "reference": 1, "routed": 0.98, "routed_failed": 0}
+{"episode": 4, "cause": "partition_skew", "check": "partition_lag_spread", "reference": 0, "routed": 0.98, "routed_failed": 0, "routed_usd": 0.0029820000000000003}
+{"episode": 3, "cause": "upstream_burst", "check": "restart_consumer", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0013440000000000001}
+{"episode": 5, "cause": "rebalancing", "check": "broker_quota_metrics", "reference": 0, "routed": 0.02, "routed_failed": 0}
+{"episode": 5, "cause": "rebalancing", "check": "jvm_gc_logs", "reference": 0, "routed": 0.13, "routed_failed": 0}
+{"episode": 4, "cause": "partition_skew", "check": "restart_consumer", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0013440000000000001}
+{"episode": 3, "cause": "upstream_burst", "check": "consumer_cpu_profile", "reference": 0, "routed": 0.98, "routed_failed": 0, "routed_usd": 0.00453}
+{"episode": 5, "cause": "rebalancing", "check": "producer_rate_graph", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.001437}
+{"episode": 4, "cause": "partition_skew", "check": "consumer_cpu_profile", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0056099999999999995}
+{"episode": 5, "cause": "rebalancing", "check": "partition_lag_spread", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0031769999999999997}
+{"episode": 5, "cause": "rebalancing", "check": "restart_consumer", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.0013440000000000001}
+{"episode": 5, "cause": "rebalancing", "check": "consumer_cpu_profile", "reference": 0, "routed": 0.02, "routed_failed": 0, "routed_usd": 0.005268}

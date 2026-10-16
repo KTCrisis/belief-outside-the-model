@@ -1,0 +1,9 @@
+[00:46:19] start, 658 min before the deadline
+[00:46:19] P12: 3 hybrid pairs, cell B
+[00:58:48] P12 done (exit 0)
+[00:58:55] extraction smoke test: 1 failed extractions of 9
+[00:58:55] routed_oss: 840 readings
+[01:23:53] routed_oss done (exit 0)
+[01:23:53] gpt-oss alone: 120 episodes
+[02:16:24] gpt-oss alone done (exit 0)
+[02:16:24] end, model unloaded

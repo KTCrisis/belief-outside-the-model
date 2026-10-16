@@ -1,0 +1,26 @@
+kafka: 50 draws, 0.86 $ -> tables-kafka.json
+internet: 50 draws, 0.94 $ -> tables-internet.json
+
+== kafka (miss 60 min), exact expected loss per incident
+table                                 loss  minutes  accuracy    MAE
+truth                                22.02     8.11     0.768  0.000
+mem7 alone (flat)                    26.26     7.32     0.684  0.088
+LLM single draw                      23.85  min  21.63  max  29.80  (n=50)
+LLM median of 5                      23.27  min  22.11  max  25.57  (n=10)
+LLM median as prior + mem7, k=2      25.84  min  25.19  max  26.00  (n=10)
+LLM median as prior + mem7, k=5      24.90  min  24.59  max  25.40  (n=10)
+LLM median as prior + mem7, k=10     23.37  min  22.78  max  24.86  (n=10)
+LLM median as prior + mem7, k=20     23.01  min  22.78  max  24.32  (n=10)
+
+== internet (miss 45 min), exact expected loss per incident
+table                                 loss  minutes  accuracy    MAE
+truth                                15.30     7.88     0.835  0.000
+mem7 alone (flat)                    18.37     6.53     0.737  0.087
+LLM single draw                      22.49  min  16.17  max  36.30  (n=50)
+LLM median of 5                      19.91  min  16.61  max  27.32  (n=10)
+LLM median as prior + mem7, k=2      16.24  min  15.76  max  16.37  (n=10)
+LLM median as prior + mem7, k=5      16.16  min  15.41  max  16.41  (n=10)
+LLM median as prior + mem7, k=10     16.15  min  15.76  max  17.10  (n=10)
+LLM median as prior + mem7, k=20     16.68  min  15.46  max  19.54  (n=10)
+
+[exited with code 0]

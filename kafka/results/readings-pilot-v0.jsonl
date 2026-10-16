@@ -1,0 +1,84 @@
+{"episode": 0, "cause": "gc_pauses", "check": "rebalance_logs", "reference": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "partition_lag_spread", "reference": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "producer_rate_graph", "reference": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "broker_quota_metrics", "reference": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "jvm_gc_logs", "reference": 1}
+{"episode": 0, "cause": "gc_pauses", "check": "consumer_cpu_profile", "reference": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "restart_consumer", "reference": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "rebalance_logs", "reference": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "partition_lag_spread", "reference": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "producer_rate_graph", "reference": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "broker_quota_metrics", "reference": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "jvm_gc_logs", "reference": 0}
+{"episode": 1, "cause": "slow_consumer", "check": "consumer_cpu_profile", "reference": 1}
+{"episode": 1, "cause": "slow_consumer", "check": "restart_consumer", "reference": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "rebalance_logs", "reference": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "partition_lag_spread", "reference": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "producer_rate_graph", "reference": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "broker_quota_metrics", "reference": 1}
+{"episode": 2, "cause": "broker_throttling", "check": "jvm_gc_logs", "reference": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "consumer_cpu_profile", "reference": 0}
+{"episode": 2, "cause": "broker_throttling", "check": "restart_consumer", "reference": 0}
+{"episode": 3, "cause": "upstream_burst", "check": "rebalance_logs", "reference": 0}
+{"episode": 3, "cause": "upstream_burst", "check": "partition_lag_spread", "reference": 0}
+{"episode": 3, "cause": "upstream_burst", "check": "producer_rate_graph", "reference": 1}
+{"episode": 3, "cause": "upstream_burst", "check": "broker_quota_metrics", "reference": 0}
+{"episode": 3, "cause": "upstream_burst", "check": "jvm_gc_logs", "reference": 0}
+{"episode": 3, "cause": "upstream_burst", "check": "consumer_cpu_profile", "reference": 1}
+{"episode": 3, "cause": "upstream_burst", "check": "restart_consumer", "reference": 0}
+{"episode": 4, "cause": "partition_skew", "check": "rebalance_logs", "reference": 0}
+{"episode": 4, "cause": "partition_skew", "check": "partition_lag_spread", "reference": 1}
+{"episode": 4, "cause": "partition_skew", "check": "producer_rate_graph", "reference": 0}
+{"episode": 4, "cause": "partition_skew", "check": "broker_quota_metrics", "reference": 0}
+{"episode": 4, "cause": "partition_skew", "check": "jvm_gc_logs", "reference": 0}
+{"episode": 4, "cause": "partition_skew", "check": "consumer_cpu_profile", "reference": 0}
+{"episode": 4, "cause": "partition_skew", "check": "restart_consumer", "reference": 0}
+{"episode": 5, "cause": "rebalancing", "check": "rebalance_logs", "reference": 1}
+{"episode": 5, "cause": "rebalancing", "check": "partition_lag_spread", "reference": 0}
+{"episode": 5, "cause": "rebalancing", "check": "producer_rate_graph", "reference": 0}
+{"episode": 5, "cause": "rebalancing", "check": "broker_quota_metrics", "reference": 0}
+{"episode": 5, "cause": "rebalancing", "check": "jvm_gc_logs", "reference": 0}
+{"episode": 5, "cause": "rebalancing", "check": "consumer_cpu_profile", "reference": 0}
+{"episode": 5, "cause": "rebalancing", "check": "restart_consumer", "reference": 0}
+{"episode": 0, "cause": "gc_pauses", "check": "rebalance_logs", "reference": 0, "jev": 0.02, "haiku": 0.05}
+{"episode": 0, "cause": "gc_pauses", "check": "partition_lag_spread", "reference": 0, "jev": 0.08, "haiku": 0.15}
+{"episode": 0, "cause": "gc_pauses", "check": "producer_rate_graph", "reference": 0, "jev": 0.63, "haiku": 0.82}
+{"episode": 0, "cause": "gc_pauses", "check": "broker_quota_metrics", "reference": 0, "jev": 0.02, "haiku": 0.01}
+{"episode": 0, "cause": "gc_pauses", "check": "jvm_gc_logs", "reference": 1, "jev": 0.92, "haiku": 0.92}
+{"episode": 0, "cause": "gc_pauses", "check": "consumer_cpu_profile", "reference": 0, "jev": 0.87, "haiku": 0.85}
+{"episode": 0, "cause": "gc_pauses", "check": "restart_consumer", "reference": 0, "jev": 0.02, "haiku": 0.01}
+{"episode": 1, "cause": "slow_consumer", "check": "rebalance_logs", "reference": 0, "jev": 0.02, "haiku": 0.05}
+{"episode": 1, "cause": "slow_consumer", "check": "partition_lag_spread", "reference": 0, "jev": 0.08, "haiku": 0.15}
+{"episode": 1, "cause": "slow_consumer", "check": "producer_rate_graph", "reference": 0, "jev": 0.59, "haiku": 0.72}
+{"episode": 1, "cause": "slow_consumer", "check": "broker_quota_metrics", "reference": 0, "jev": 0.02, "haiku": 0.05}
+{"episode": 1, "cause": "slow_consumer", "check": "jvm_gc_logs", "reference": 0, "jev": 0.08, "haiku": 0.15}
+{"episode": 1, "cause": "slow_consumer", "check": "consumer_cpu_profile", "reference": 1, "jev": 0.93, "haiku": 0.92}
+{"episode": 1, "cause": "slow_consumer", "check": "restart_consumer", "reference": 0, "jev": 0.02, "haiku": 0.01}
+{"episode": 2, "cause": "broker_throttling", "check": "rebalance_logs", "reference": 0, "jev": 0.02, "haiku": 0.15}
+{"episode": 2, "cause": "broker_throttling", "check": "partition_lag_spread", "reference": 0, "jev": 0.06, "haiku": 0.15}
+{"episode": 2, "cause": "broker_throttling", "check": "producer_rate_graph", "reference": 0, "jev": 0.64, "haiku": 0.72}
+{"episode": 2, "cause": "broker_throttling", "check": "broker_quota_metrics", "reference": 1, "jev": 0.97, "haiku": 0.95}
+{"episode": 2, "cause": "broker_throttling", "check": "jvm_gc_logs", "reference": 0, "jev": 0.07, "haiku": 0.15}
+{"episode": 2, "cause": "broker_throttling", "check": "consumer_cpu_profile", "reference": 0, "jev": 0.05, "haiku": 0.15}
+{"episode": 2, "cause": "broker_throttling", "check": "restart_consumer", "reference": 0, "jev": 0.02, "haiku": 0.01}
+{"episode": 3, "cause": "upstream_burst", "check": "rebalance_logs", "reference": 0, "jev": 0.02, "haiku": 0.15}
+{"episode": 3, "cause": "upstream_burst", "check": "partition_lag_spread", "reference": 0, "jev": 0.06, "haiku": 0.15}
+{"episode": 3, "cause": "upstream_burst", "check": "producer_rate_graph", "reference": 1, "jev": 0.52, "haiku": 0.98}
+{"episode": 3, "cause": "upstream_burst", "check": "broker_quota_metrics", "reference": 0, "jev": 0.02, "haiku": 0.05}
+{"episode": 3, "cause": "upstream_burst", "check": "jvm_gc_logs", "reference": 0, "jev": 0.08, "haiku": 0.15}
+{"episode": 3, "cause": "upstream_burst", "check": "consumer_cpu_profile", "reference": 1, "jev": 0.93, "haiku": 0.88}
+{"episode": 3, "cause": "upstream_burst", "check": "restart_consumer", "reference": 0, "jev": 0.02, "haiku": 0.01}
+{"episode": 4, "cause": "partition_skew", "check": "rebalance_logs", "reference": 0, "jev": 0.02, "haiku": 0.05}
+{"episode": 4, "cause": "partition_skew", "check": "partition_lag_spread", "reference": 1, "jev": 0.97, "haiku": 0.92}
+{"episode": 4, "cause": "partition_skew", "check": "producer_rate_graph", "reference": 0, "jev": 0.56, "haiku": 0.72}
+{"episode": 4, "cause": "partition_skew", "check": "broker_quota_metrics", "reference": 0, "jev": 0.02, "haiku": 0.01}
+{"episode": 4, "cause": "partition_skew", "check": "jvm_gc_logs", "reference": 0, "jev": 0.07, "haiku": 0.15}
+{"episode": 4, "cause": "partition_skew", "check": "consumer_cpu_profile", "reference": 0, "jev": 0.13, "haiku": 0.92}
+{"episode": 4, "cause": "partition_skew", "check": "restart_consumer", "reference": 0, "jev": 0.02, "haiku": 0.01}
+{"episode": 5, "cause": "rebalancing", "check": "rebalance_logs", "reference": 1, "jev": 0.98, "haiku": 0.99}
+{"episode": 5, "cause": "rebalancing", "check": "partition_lag_spread", "reference": 0, "jev": 0.32, "haiku": 0.22}
+{"episode": 5, "cause": "rebalancing", "check": "producer_rate_graph", "reference": 0, "jev": 0.6, "haiku": 0.72}
+{"episode": 5, "cause": "rebalancing", "check": "broker_quota_metrics", "reference": 0, "jev": 0.02, "haiku": 0.05}
+{"episode": 5, "cause": "rebalancing", "check": "jvm_gc_logs", "reference": 0, "jev": 0.13, "haiku": 0.15}
+{"episode": 5, "cause": "rebalancing", "check": "consumer_cpu_profile", "reference": 0, "jev": 0.15, "haiku": 0.85}
+{"episode": 5, "cause": "rebalancing", "check": "restart_consumer", "reference": 0, "jev": 0.02, "haiku": 0.01}

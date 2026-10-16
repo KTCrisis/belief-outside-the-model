@@ -1,0 +1,4 @@
+rumor: 200 claims, 60 true, 30 with a retraction, miss 40 min
+agent                   loss  minutes  sources  accuracy  $/episode
+hybrid_prov_jev    7.76 ± 0.75     5.16     2.02     0.935     0.0000
+jev: 166 calls, 76112 input tokens, $0.0032, 0 errors
