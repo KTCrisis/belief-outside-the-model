@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or these recorded outputs, please cite the preprint below."
+title: "Belief Outside the Model: code and recorded outputs"
+type: software
+authors:
+  - family-names: Verchiani
+    given-names: Marc
+    orcid: "https://orcid.org/0009-0002-7598-5548"
+repository-code: "https://github.com/KTCrisis/belief-outside-the-model"
+license: MIT
+keywords:
+  - large language models
+  - AI agents
+  - Bayesian inference
+  - value of information
+  - incident diagnosis
+  - Apache Kafka
+  - preregistration
+preferred-citation:
+  type: article
+  title: "Belief Outside the Model: Two Preregistered Studies of a Hybrid Diagnosis Agent on Real Kafka Faults"
+  authors:
+    - family-names: Verchiani
+      given-names: Marc
+      orcid: "https://orcid.org/0009-0002-7598-5548"
+  year: 2026
+  month: 10
+  publisher:
+    name: Zenodo
+  doi: "10.5281/zenodo.23414699"
+  url: "https://doi.org/10.5281/zenodo.23414699"
+  status: preprint

@@ -3,6 +3,8 @@
 Code, recorded outputs and analysis outputs for the paper *Belief Outside the Model: Two Preregistered
 Studies of a Hybrid Diagnosis Agent on Real Kafka Faults* (Marc Verchiani, 2026).
 
+Preprint: https://doi.org/10.5281/zenodo.23414699 (all versions).
+
 Preregistrations: study 1 https://osf.io/hdmq9, study 2 https://osf.io/8dq6m, OSF project https://osf.io/e8ydh.
 
 ## Layout
@@ -60,6 +62,24 @@ Cloudflare Workers AI and needs `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_WORKERS_
 studies are recorded, so the analyses do not need it.
 
 `kafka/results/run-notes.md` logs what else ran on the workstation during data collection.
+
+## Citation
+
+```bibtex
+@misc{verchiani2026belief,
+  title     = {Belief Outside the Model: Two Preregistered Studies of a Hybrid Diagnosis Agent on Real Kafka Faults},
+  author    = {Verchiani, Marc},
+  year      = {2026},
+  month     = oct,
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23414699},
+  url       = {https://doi.org/10.5281/zenodo.23414699},
+  note      = {Preprint}
+}
+```
+
+The DOI above resolves to the latest version of the preprint; version 3.7 is
+https://doi.org/10.5281/zenodo.23414700. `CITATION.cff` carries the same reference.
 
 ## License
 
